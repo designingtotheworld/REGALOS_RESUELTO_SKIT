@@ -404,12 +404,12 @@ export default function App() {
                 className="w-full h-auto object-cover m-0 p-0 rounded-none block"
                 referrerPolicy="no-referrer"
               />
-              {/* Floating 65% OFF Badge */}
-              <div className="absolute top-4 right-4 md:top-6 md:right-6 z-20 bg-gradient-to-r from-[#B31942] to-[#990000] text-white border-2 border-[#D4AF37] px-4 py-2 rounded-2xl shadow-2xl flex items-center gap-2 animate-bounce">
-                <span className="text-xl">⭐</span>
+              {/* Floating Much Bigger 71% OFF Badge */}
+              <div className="absolute top-4 right-4 md:top-6 md:right-6 z-20 bg-gradient-to-r from-[#B31942] via-[#990000] to-[#700D22] text-white border-4 border-[#D4AF37] px-6 py-4 rounded-3xl shadow-2xl flex items-center gap-3 animate-bounce">
+                <span className="text-3xl md:text-4xl">⭐</span>
                 <div className="text-left leading-tight">
-                  <div className="text-[10px] uppercase font-bold tracking-widest text-amber-200">SÚPER OFERTA</div>
-                  <div className="text-sm md:text-base font-black">65% OFF</div>
+                  <div className="text-xs md:text-sm uppercase font-extrabold tracking-widest text-amber-200">SÚPER OFERTA</div>
+                  <div className="text-2xl md:text-4xl font-black text-amber-300">71% OFF</div>
                 </div>
               </div>
             </div>
@@ -464,7 +464,7 @@ export default function App() {
                 <div className="flex-1 space-y-1">
                   <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">Guía de Canva</h4>
                   <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
-                    Para agregar nombres, personalizar frases y editar fácilmente.
+                    [qué permite hacer: agregar nombres, personalizar frases…].
                   </p>
                 </div>
               </div>
@@ -789,6 +789,20 @@ export default function App() {
             <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-2 shadow-[0_0_8px_white]"></span>
           </div>
         </section>
+
+        {/* BOTÓN ADICIONAL ABAJO DEL TESTIMONIO */}
+        <div className="pt-6 flex justify-center max-w-md mx-auto">
+          <a 
+            href="https://patatas-store.impultienda.ar/checkout" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
+          >
+            <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
+            <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
+            <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 15.000</div>
+          </a>
+        </div>
 
       </main>
 
