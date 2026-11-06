@@ -428,71 +428,57 @@ export default function App() {
                 </p>
               </div>
 
-            {/* Checklist of Deliverables in One Card */}
-            <div className="space-y-6 bg-[#FAF9F5] border border-[#D4AF37]/30 rounded-2xl p-6 md:p-8 shadow-inner">
-              {/* Check 1 */}
-              <div className="flex items-start gap-4 pb-6 border-b border-[#E5E5EA]">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#D4AF37] to-[#B8860B] text-white flex items-center justify-center shrink-0 font-black shadow-md">
+            {/* Checklist of Deliverables in One Card (Image 2 Style) */}
+            <div className="space-y-4 bg-[#FAF9F5] border border-[#D4AF37]/30 rounded-2xl p-6 md:p-8 shadow-inner text-left">
+              {/* Item 1 */}
+              <div className="flex items-start gap-4 pb-4 border-b border-dashed border-[#D4AF37]/40">
+                <div className="w-8 h-8 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow">
                   ✓
                 </div>
-                <div className="flex-1 space-y-2">
-                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">10 KITS PARA ARMAR 10 IDEAS DE REGALO</h4>
-                  <p className="text-xs text-[#6E6E73] leading-relaxed">
-                    Archivos PNG 300 DPI listos para mandar a imprimir y armar <strong className="text-[#1C1C1E]">más de 50 regalos únicos</strong>.
+                <div className="flex-1 space-y-1">
+                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">10 kits de diseños listos para imprimir</h4>
+                  <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                    Archivos PNG de alta resolución (300 DPI), preparados para DTF textil y DTF UV, para armar más de 50 regalos.
                   </p>
-                  <div className="pt-1 font-black text-sm">
-                    <span className="line-through text-red-600 font-extrabold mr-2">ARS 30.000</span>
-                  </div>
                 </div>
               </div>
 
-              {/* Check 2 */}
-              <div className="flex items-start gap-4 pb-6 border-b border-[#E5E5EA]">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#D4AF37] to-[#B8860B] text-white flex items-center justify-center shrink-0 font-black shadow-md">
+              {/* Item 2 */}
+              <div className="flex items-start gap-4 pb-4 border-b border-dashed border-[#D4AF37]/40">
+                <div className="w-8 h-8 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow">
                   ✓
                 </div>
-                <div className="flex-1 space-y-2">
-                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">VIDEOS EXPLICATIVOS + GUÍA EXCLUSIVA CANVA</h4>
-                  <p className="text-xs text-[#6E6E73] leading-relaxed">
-                    Como te mostramos en videos simples y cortos, el proceso de cómo estampar tus objetos con la plancha que tenés en casa y cómo aplicar el DTF UV en tus objetos rígidos.
+                <div className="flex-1 space-y-1">
+                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">Videos cortos paso a paso</h4>
+                  <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                    Cómo estampar con la plancha de tu casa y cómo aplicar los stickers en objetos rígidos.
                   </p>
-                  <div className="pt-1 flex items-center gap-3 font-black text-sm">
-                    <span className="line-through text-red-600 font-extrabold">ARS 15.000</span>
-                    <span className="bg-[#1B4D3E] text-white text-xs font-black px-3 py-1 rounded-full shadow-sm">GRATIS CON TU KIT</span>
-                  </div>
                 </div>
               </div>
 
-              {/* Check 3 */}
-              <div className="flex items-start gap-4 pb-6 border-b border-[#E5E5EA]">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#D4AF37] to-[#B8860B] text-white flex items-center justify-center shrink-0 font-black shadow-md">
+              {/* Item 3 */}
+              <div className="flex items-start gap-4 pb-4 border-b border-dashed border-[#D4AF37]/40">
+                <div className="w-8 h-8 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow">
                   ✓
                 </div>
-                <div className="flex-1 space-y-2">
-                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">TAGS PARA REGALOS IMPRIMIBLES</h4>
-                  <p className="text-xs text-[#6E6E73] leading-relaxed">
-                    Diseños de etiquetas y tags navideños a juego para una presentación impecable.
+                <div className="flex-1 space-y-1">
+                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">Guía de Canva</h4>
+                  <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                    Para agregar nombres, personalizar frases y editar fácilmente.
                   </p>
-                  <div className="pt-1 flex items-center gap-3 font-black text-sm">
-                    <span className="line-through text-red-600 font-extrabold">ARS 6.000</span>
-                    <span className="bg-[#1B4D3E] text-white text-xs font-black px-3 py-1 rounded-full shadow-sm">GRATIS CON TU KIT</span>
-                  </div>
                 </div>
               </div>
 
-              {/* Bonus Exclusive Header inside checklist */}
-              <div className="pt-2 space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <span className="text-3xl animate-bounce">🎁</span>
-                    <div>
-                      <p className="text-[10px] uppercase tracking-widest font-bold text-[#996515]">Regalo Especial</p>
-                      <h4 className="text-lg md:text-xl font-black tracking-tight text-[#1C1C1E]">BONO EXCLUSIVO</h4>
-                    </div>
-                  </div>
-                  <span className="text-xs font-black bg-[#1B4D3E] text-white px-4 py-1.5 rounded-full uppercase tracking-widest shadow-md">
-                    100% GRATIS HOY
-                  </span>
+              {/* Item 4 (Bono) */}
+              <div className="flex items-start gap-4 pt-1">
+                <div className="w-8 h-8 rounded-full bg-[#B31942] text-white flex items-center justify-center shrink-0 font-bold shadow">
+                  🎁
+                </div>
+                <div className="flex-1 space-y-1">
+                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">Bono: 12 tags navideños para imprimir</h4>
+                  <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                    Etiquetas "Para / De" a juego, para imprimir en cartulina A4 y que cada regalo quede presentado como de tienda.
+                  </p>
                 </div>
               </div>
             </div>
