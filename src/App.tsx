@@ -231,7 +231,6 @@ export default function App() {
                 className="w-full max-w-md mx-auto px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
               >
                 <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
-                <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
                 <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 12.000</div>
               </a>
             </div>
@@ -423,7 +422,7 @@ export default function App() {
                 <span className="text-3xl md:text-4xl">⭐</span>
                 <div className="text-left leading-tight">
                   <div className="text-xs md:text-sm uppercase font-extrabold tracking-widest text-amber-200">SÚPER OFERTA</div>
-                  <div className="text-2xl md:text-4xl font-black text-amber-300">76% OFF</div>
+                  <div className="text-xl md:text-3xl font-black text-amber-300">AHORA 76% OFF</div>
                 </div>
               </div>
             </div>
