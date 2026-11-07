@@ -443,7 +443,20 @@ export default function App() {
 
             {/* Checklist of Deliverables in One Card (Image 2 Style) */}
             <div className="space-y-4 bg-[#FAF9F5] border border-[#D4AF37]/30 rounded-2xl p-6 md:p-8 shadow-inner text-left">
-              {/* Item 1 */}
+              {/* Item 1: Guía de Bienvenida */}
+              <div className="flex items-start gap-4 pb-4 border-b border-dashed border-[#D4AF37]/40">
+                <div className="w-8 h-8 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow">
+                  ✓
+                </div>
+                <div className="flex-1 space-y-1">
+                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">Guía de bienvenida y cómo usar el kit</h4>
+                  <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                    Explicación paso a paso para acceder a tus archivos, entender cada material y empezar a armar tus regalos sin dudas desde el primer minuto.
+                  </p>
+                </div>
+              </div>
+
+              {/* Item 2: Kits de diseños */}
               <div className="flex items-start gap-4 pb-4 border-b border-dashed border-[#D4AF37]/40">
                 <div className="w-8 h-8 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow">
                   ✓
