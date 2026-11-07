@@ -136,7 +136,7 @@ export default function App() {
       {/* TOP URGENCY BANNER WITH SWINGING BELLS & WHITE GAP */}
       <div className="bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] text-white py-3.5 px-4 text-center text-xs md:text-sm font-black tracking-wider uppercase flex items-center justify-center gap-3 shadow-lg sticky top-0 z-50">
         <span className="bell-ring text-lg">🔔</span>
-        <span>⚡ PRECIO ESPECIAL DE LANZAMIENTO $15.000 ⚡</span>
+        <span>⚡ PRECIO ESPECIAL DE LANZAMIENTO $12.000 ⚡</span>
         <span className="bell-ring text-lg">🔔</span>
       </div>
 
@@ -232,7 +232,7 @@ export default function App() {
               >
                 <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
                 <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
-                <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 15.000</div>
+                <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 12.000</div>
               </a>
             </div>
           </div>
@@ -332,6 +332,20 @@ export default function App() {
               </div>
             ))}
           </div>
+
+          {/* Botón de compra adicional abajo de las tarjetas */}
+          <div className="pt-6 flex justify-center max-w-md mx-auto">
+            <a 
+              href="https://patatas-store.impultienda.ar/checkout" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
+            >
+              <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
+              <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
+              <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 12.000</div>
+            </a>
+          </div>
         </section>
 
         {/* CÓMO FUNCIONA / CÓMO SE USA (ESTILO NAVIDEÑO ROJO Y DORADO) */}
@@ -409,7 +423,7 @@ export default function App() {
                 <span className="text-3xl md:text-4xl">⭐</span>
                 <div className="text-left leading-tight">
                   <div className="text-xs md:text-sm uppercase font-extrabold tracking-widest text-amber-200">SÚPER OFERTA</div>
-                  <div className="text-2xl md:text-4xl font-black text-amber-300">71% OFF</div>
+                  <div className="text-2xl md:text-4xl font-black text-amber-300">76% OFF</div>
                 </div>
               </div>
             </div>
@@ -553,7 +567,7 @@ export default function App() {
               {/* Price displayed very big, clear and easy to read */}
               <div className="bg-white/15 backdrop-blur-md rounded-3xl p-6 border-2 border-white/40 inline-block px-10 py-5 shadow-inner">
                 <p className="text-xs md:text-sm uppercase tracking-widest font-black opacity-95 text-amber-100">SOLO HOY PAGÁS</p>
-                <p className="text-5xl md:text-6xl font-black tracking-tight text-white drop-shadow-lg">ARS 15.000</p>
+                <p className="text-5xl md:text-6xl font-black tracking-tight text-white drop-shadow-lg">ARS 12.000</p>
               </div>
 
               {/* Single Large Golden Checkout Button: Argentina (Mercado Pago) */}
@@ -566,7 +580,7 @@ export default function App() {
                 >
                   <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
                   <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
-                  <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 15.000</div>
+                  <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 12.000</div>
                 </a>
               </div>
               
@@ -708,7 +722,7 @@ export default function App() {
               Sorprendé con regalos originales hechos por vos misma y disfrutá este año de ser la mejor mamá noel
             </h3>
             <p className="text-sm text-[#6E6E73] max-w-lg mx-auto">
-              Obtené el kit completo hoy mismo por solo <strong className="text-[#1C1C1E] text-base">ARS 15.000</strong>.
+              Obtené el kit completo hoy mismo por solo <strong className="text-[#1C1C1E] text-base">ARS 12.000</strong>.
             </p>
           </div>
 
@@ -728,7 +742,7 @@ export default function App() {
             >
               <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
               <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
-              <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 15.000</div>
+              <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 12.000</div>
             </a>
           </div>
 
@@ -800,7 +814,7 @@ export default function App() {
           >
             <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
             <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
-            <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 15.000</div>
+            <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 12.000</div>
           </a>
         </div>
 
