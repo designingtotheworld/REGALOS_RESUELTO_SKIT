@@ -75,7 +75,7 @@ export default function App() {
       para: "los compañeros de trabajo, el jefe, el amigo invisible del laburo.",
       detail: "3 diseños para armar hasta 12 tazas.",
       tag: "DTF UV",
-      img: "https://i.imgur.com/5ND6nB8.jpeg"
+      img: "/assets/aistudio/TAZAS-80_4e860e58.jpg"
     },
     {
       title: "Anotador 2027",
@@ -136,7 +136,7 @@ export default function App() {
       {/* TOP URGENCY BANNER WITH SWINGING BELLS & WHITE GAP */}
       <div className="bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] text-white py-3.5 px-4 text-center text-xs md:text-sm font-black tracking-wider uppercase flex items-center justify-center gap-3 shadow-lg sticky top-0 z-50">
         <span className="bell-ring text-lg">🔔</span>
-        <span>⚡ PRECIO ESPECIAL DE LANZAMIENTO $9.900 ⚡</span>
+        <span>⚡ PRECIO ESPECIAL DE LANZAMIENTO ARS $9.900 ⚡</span>
         <span className="bell-ring text-lg">🔔</span>
       </div>
 
@@ -202,13 +202,8 @@ export default function App() {
             <div className="flex items-center gap-2"><span>🏡</span> <span>Tu suegra, tus viejos, tus hermanos</span></div>
           </div>
           <p className="text-xs md:text-sm text-[#6E6E73] italic text-center leading-relaxed">
-            Y cada regalo que mirás cuesta una fortuna o es muy genérico. La salida no es regalar menos: es <strong className="text-[#1C1C1E]">regalar distinto</strong>.
+            Hacé regalos únicos y personalizados por una fracción de su costo.
           </p>
-          <div className="bg-[#FFFBF0] border-l-4 border-[#D93829] p-3 rounded-xl text-center">
-            <p className="text-sm md:text-base font-black text-[#1C1C1E]">
-              Algo personalizado y con onda que armaste vos por una fracción de su costo.
-            </p>
-          </div>
         </section>
 
         {/* HERO SUBHEADLINE & CTA */}
@@ -227,7 +222,7 @@ export default function App() {
                 className="w-full max-w-md mx-auto px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
               >
                 <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
-                <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 9.900</div>
+                <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $9.900</div>
               </a>
             </div>
           </div>
@@ -316,14 +311,14 @@ export default function App() {
                 </div>
 
                 {/* Bottom detail box (Red Box Style) */}
-                <div className="bg-[#D93829] border-2 border-[#D4AF37] rounded-2xl p-5 shadow-lg space-y-3 text-white">
-                  <div className="font-black text-base md:text-lg tracking-tight text-white flex items-center justify-between">
+                <div className="bg-[#FF2D2D] border-2 border-[#D4AF37] rounded-2xl p-6 shadow-xl space-y-3 text-white">
+                  <div className="font-extrabold text-lg md:text-xl tracking-tight text-white flex items-center justify-between">
                     <span>¿Qué incluye el kit?</span>
-                    <span className="shrink-0 bg-white/20 text-white text-[11px] font-black px-3 py-1 rounded-lg border border-white/30 uppercase tracking-wider">
+                    <span className="shrink-0 bg-white/25 text-white text-xs font-black px-3.5 py-1.5 rounded-xl border border-white/40 uppercase tracking-wider">
                       {gift.tag}
                     </span>
                   </div>
-                  <p className="text-xs md:text-sm text-white/95 font-medium leading-relaxed">
+                  <p className="text-sm md:text-base text-white font-medium leading-relaxed">
                     {gift.detail}
                   </p>
                 </div>
@@ -341,7 +336,7 @@ export default function App() {
             >
               <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
               <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">A UN PRECIO INCREIBLE DE LANZAMIENTO</div>
-              <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 9.900</div>
+              <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $9.900</div>
             </a>
           </div>
         </section>
@@ -572,13 +567,13 @@ export default function App() {
                 <span className="text-xs md:text-sm font-black uppercase tracking-widest bg-white/25 px-5 py-2 rounded-full inline-block shadow-sm">
                   🔥 OFERTA DE LANZAMIENTO IRRESISTIBLE
                 </span>
-                <p className="text-sm font-medium opacity-95 pt-1">Valor Total Real del Paquete: <span className="line-through font-black text-lg text-white decoration-white">ARS 51.000</span> <span className="text-xs text-amber-100">(30 + 15 + 6)</span></p>
+                <p className="text-sm font-medium opacity-95 pt-1">Valor Total Real del Paquete: <span className="line-through font-black text-lg text-white decoration-white">ARS $51.000</span> <span className="text-xs text-amber-100">(30 + 15 + 6)</span></p>
               </div>
 
               {/* Price displayed very big, clear and easy to read */}
               <div className="bg-white/15 backdrop-blur-md rounded-3xl p-6 border-2 border-white/40 inline-block px-10 py-5 shadow-inner">
                 <p className="text-xs md:text-sm uppercase tracking-widest font-black opacity-95 text-amber-100">SOLO HOY PAGÁS</p>
-                <p className="text-5xl md:text-6xl font-black tracking-tight text-white drop-shadow-lg">ARS 9.900</p>
+                <p className="text-5xl md:text-6xl font-black tracking-tight text-white drop-shadow-lg">ARS $9.900</p>
               </div>
 
               {/* Single Large Golden Checkout Button: Argentina (Mercado Pago) */}
@@ -591,7 +586,7 @@ export default function App() {
                 >
                   <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
                   <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
-                  <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 9.900</div>
+                  <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $9.900</div>
                 </a>
               </div>
               
@@ -783,7 +778,7 @@ export default function App() {
           >
             <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
             <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
-            <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 9.900</div>
+            <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $9.900</div>
           </a>
         </div>
 
