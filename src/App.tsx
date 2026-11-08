@@ -26,49 +26,49 @@ export default function App() {
       para: "tu amiga, tu hermana, la que ya está pensando en las vacaciones.",
       detail: "3 diseños para armar hasta 3 bolsas (34 x 37 cm).",
       tag: "DTF TEXTIL",
-      img: "https://i.imgur.com/5RAt3Wt.jpeg"
+      img: "/assets/aistudio/PRUEBA_NUEVA_-80_0d595ff8.jpg"
     },
     {
       title: "Neceser de verano",
       para: "el amigo invisible, las chicas del grupo, un regalito para la valija de enero.",
       detail: "3 diseños para armar hasta 3 neceseres (20 x 15 cm).",
       tag: "DTF TEXTIL",
-      img: "https://i.imgur.com/itRWi7G.jpeg"
+      img: "/assets/aistudio/NECESER-80_90e1ba93.jpg"
     },
     {
       title: "Vela \"Por un 2027 lleno de buenos momentos\"",
       para: "la seño, tu suegra, la vecina, un detalle para la mesa del 31.",
       detail: "3 diseños para armar hasta 6 velas (5 x 5 cm, frascos de 8 cm aprox.).",
       tag: "DTF UV",
-      img: "https://i.imgur.com/ICg7Nvq.jpeg"
+      img: "/assets/aistudio/VELAS-80_6a96447e.jpg"
     },
     {
       title: "El delantal del asador",
       para: "tu viejo, tu suegro, el que siempre está en la parrilla.",
       detail: "3 diseños para armar hasta 5 delantales.",
       tag: "DTF TEXTIL",
-      img: "https://i.imgur.com/lqSZLb2.jpeg"
+      img: "/assets/aistudio/DELANTALES-80_721e8d83.jpg"
     },
     {
       title: "Almohadón vintage",
       para: "el que se mudó, tu hermano, un regalo para la casa.",
       detail: "2 diseños para armar 2 almohadones de 40 x 40 cm.",
       tag: "DTF TEXTIL",
-      img: "https://i.imgur.com/hWaunHL.jpeg"
+      img: "/assets/aistudio/ALMOHADONES-80_da167cca.jpg"
     },
     {
       title: "Muñecos de animalitos",
       para: "los más chiquitos de la familia o un baby shower.",
       detail: "2 diseños para armar 2 almohadones de animalitos de 30 cm de alto.",
       tag: "DTF TEXTIL",
-      img: "https://i.imgur.com/ucCNftW.jpeg"
+      img: "/assets/aistudio/BICHITOS-80_7423286e.jpg"
     },
     {
       title: "Vasos \"Save water, drink fernet\"",
       para: "el amigo fernetero, los de la previa, un regalo de a dos.",
       detail: "3 diseños para armar hasta 7 juegos de 2 vasos (sticker de 7 cm).",
       tag: "DTF UV",
-      img: "https://i.imgur.com/mEPNn7N.jpeg"
+      img: "/assets/aistudio/VASOS-80_f555d110.jpg"
     },
     {
       title: "Taza para el café de la oficina",
@@ -82,14 +82,14 @@ export default function App() {
       para: "la seño, las maestras, los compañeros, un regalo útil para arrancar el año.",
       detail: "4 diseños para armar hasta 6 anotadores (14 x 21 cm).",
       tag: "DTF UV",
-      img: "https://i.imgur.com/SYZLJGr.jpeg"
+      img: "/assets/aistudio/ANOTADOR-80_9770c65c.jpg"
     },
     {
       title: "Stickers para el termo",
       para: "el que no larga el mate ni en la pileta.",
       detail: "4 diseños listos para imprimir (14 unidades).",
       tag: "DTF UV",
-      img: "https://i.imgur.com/x3gTi4P.jpeg"
+      img: "/assets/aistudio/stickers_sueltos-80_90f2b873.jpg"
     },
   ];
 
@@ -190,29 +190,25 @@ export default function App() {
 
       <main className="max-w-5xl mx-auto px-6 py-12 space-y-24">
         
-        {/* NUEVO TEXTO INTRODUCTORIO */}
-        <section className="bg-white border-2 border-[#D4AF37] rounded-3xl p-8 md:p-12 shadow-lg max-w-3xl mx-auto space-y-6 text-[#1C1C1E]">
+        {/* NUEVO TEXTO INTRODUCTORIO (COMPACTO) */}
+        <section className="bg-white border-2 border-[#D4AF37] rounded-3xl p-6 md:p-8 shadow-lg max-w-3xl mx-auto space-y-4 text-[#1C1C1E]">
           <h2 className="text-xl md:text-2xl font-black text-center text-[#996515]">
             Diciembre llega y la lista de regalos no para de crecer
           </h2>
-          <div className="space-y-3 text-sm md:text-base font-medium text-[#48484A] max-w-xl mx-auto pl-4">
-            <div className="flex items-center gap-3"><span>🎁</span> <span>El amigo invisible del laburo</span></div>
-            <div className="flex items-center gap-3"><span>🍎</span> <span>La seño de los chicos</span></div>
-            <div className="flex items-center gap-3"><span>👧</span> <span>Los sobrinos</span></div>
-            <div className="flex items-center gap-3"><span>🏡</span> <span>Tu suegra, tus viejos, tus hermanos</span></div>
-            <div className="flex items-center gap-3"><span>🥂</span> <span>La cena del 24 y el brindis del 31</span></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs md:text-sm font-medium text-[#48484A] max-w-xl mx-auto bg-[#FAF9F5] p-4 rounded-2xl border border-[#D4AF37]/30">
+            <div className="flex items-center gap-2"><span>🎁</span> <span>El amigo invisible del laburo</span></div>
+            <div className="flex items-center gap-2"><span>🍎</span> <span>La seño de los chicos</span></div>
+            <div className="flex items-center gap-2"><span>👧</span> <span>Los sobrinos</span></div>
+            <div className="flex items-center gap-2"><span>🏡</span> <span>Tu suegra, tus viejos, tus hermanos</span></div>
           </div>
-          <p className="text-sm md:text-base text-[#6E6E73] italic text-center leading-relaxed pt-2">
-            Y cada regalo que mirás en un local cuesta una fortuna… o es tan genérico que da lo mismo regalarlo que no.
+          <p className="text-xs md:text-sm text-[#6E6E73] italic text-center leading-relaxed">
+            Y cada regalo que mirás cuesta una fortuna o es muy genérico. La salida no es regalar menos: es <strong className="text-[#1C1C1E]">regalar distinto</strong>.
           </p>
-          <div className="bg-[#FAF9F5] border-l-4 border-[#D93829] p-4 rounded-xl text-center space-y-2 my-4">
-            <p className="text-base md:text-lg font-black text-[#1C1C1E]">
-              La salida no es regalar menos. Es regalar distinto.
+          <div className="bg-[#FFFBF0] border-l-4 border-[#D93829] p-3 rounded-xl text-center">
+            <p className="text-sm md:text-base font-black text-[#1C1C1E]">
+              Algo personalizado y con onda que armaste vos por una fracción de su costo.
             </p>
           </div>
-          <p className="text-sm md:text-base font-semibold text-[#1C1C1E] text-center leading-relaxed">
-            Algo personalizado, con onda, que parezca comprado en una tienda de diseño, pero que armaste vos por una parte de lo que cuesta.
-          </p>
         </section>
 
         {/* HERO SUBHEADLINE & CTA */}
@@ -319,14 +315,17 @@ export default function App() {
                   />
                 </div>
 
-                {/* Bottom detail box */}
-                <div className="bg-[#FFFBF0] border border-[#D4AF37]/40 rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-sm">
-                  <p className="text-xs md:text-sm text-[#48484A] font-medium leading-relaxed">
+                {/* Bottom detail box (Red Box Style) */}
+                <div className="bg-[#D93829] border-2 border-[#D4AF37] rounded-2xl p-5 shadow-lg space-y-3 text-white">
+                  <div className="font-black text-base md:text-lg tracking-tight text-white flex items-center justify-between">
+                    <span>¿Qué incluye el kit?</span>
+                    <span className="shrink-0 bg-white/20 text-white text-[11px] font-black px-3 py-1 rounded-lg border border-white/30 uppercase tracking-wider">
+                      {gift.tag}
+                    </span>
+                  </div>
+                  <p className="text-xs md:text-sm text-white/95 font-medium leading-relaxed">
                     {gift.detail}
                   </p>
-                  <span className="shrink-0 bg-[#F3E5AB] text-[#705300] text-[11px] font-black px-3 py-1.5 rounded-lg border border-[#D4AF37]/60 shadow-sm uppercase tracking-wider">
-                    {gift.tag}
-                  </span>
                 </div>
               </div>
             ))}
@@ -421,8 +420,8 @@ export default function App() {
               <div className="absolute top-4 right-4 md:top-6 md:right-6 z-20 bg-gradient-to-r from-[#B31942] via-[#990000] to-[#700D22] text-white border-4 border-[#D4AF37] px-6 py-4 rounded-3xl shadow-2xl flex items-center gap-3 animate-bounce">
                 <span className="text-3xl md:text-4xl">⭐</span>
                 <div className="text-left leading-tight">
-                  <div className="text-xs md:text-sm uppercase font-extrabold tracking-widest text-amber-200">SÚPER OFERTA</div>
-                  <div className="text-xl md:text-3xl font-black text-amber-300">AHORA 81% OFF</div>
+                  <div className="text-[11px] md:text-xs uppercase font-extrabold tracking-widest text-amber-200">SOLO POR HOY</div>
+                  <div className="text-2xl md:text-4xl font-black text-amber-300">81% OFF</div>
                 </div>
               </div>
             </div>
@@ -724,49 +723,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* OFERTA FINAL, CTA Y CIERRE EMOCIONAL */}
-        <section id="oferta" className="bg-white border-2 border-[#E05A47] rounded-3xl p-8 md:p-12 text-center space-y-8 shadow-xl max-w-3xl mx-auto">
-          <div className="space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#E05A47] px-3 py-1 bg-[#E05A47]/10 rounded-full">
-              Acceso Inmediato
-            </span>
-            <h3 className="text-2xl md:text-3xl font-extrabold text-[#1C1C1E] uppercase">
-              Sorprendé con regalos originales hechos por vos misma y disfrutá este año de ser la mejor mamá noel
-            </h3>
-            <p className="text-sm text-[#6E6E73] max-w-lg mx-auto">
-              Obtené el kit completo hoy mismo por solo <strong className="text-[#1C1C1E] text-base">ARS 9.900</strong>.
-            </p>
-          </div>
 
-          {/* Requerimiento 5: Arriba del botón de compra final agregá: título "No dejes los regalos para el final", texto "Llegá con tiempo, sorprendé a todos y descargá hoy tus archivos antes de que las imprentas se llenen." */}
-          <div className="bg-[#FAF9F5] border-2 border-[#D4AF37]/50 rounded-2xl p-6 shadow-inner space-y-2 text-center">
-            <h4 className="text-xl font-black text-[#1C1C1E]">No dejes los regalos para el final</h4>
-            <p className="text-sm text-[#6E6E73]">Llegá con tiempo, sorprendé a todos y descargá hoy tus archivos antes de que las imprentas se llenen.</p>
-          </div>
-
-          <div className="pt-2 flex justify-center">
-            {/* Single Large Golden Button Argentina - Mercado Pago */}
-            <a 
-              href="https://patatas-store.impultienda.ar/checkout" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full max-w-md px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
-            >
-              <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
-              <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
-              <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS 9.900</div>
-            </a>
-          </div>
-
-          {/* Garantía de satisfacción */}
-          <div className="pt-6 border-t border-[#E5E5EA] text-center space-y-1.5">
-            <h4 className="font-extrabold text-sm text-[#1C1C1E]">Garantía de satisfacción</h4>
-            <p className="text-xs text-[#6E6E73] max-w-md mx-auto leading-relaxed">
-              Si tu archivo no se abre o llega dañado, te lo reenviamos o te devolvemos tu dinero. Escribinos dentro de los 7 días de tu compra.
-            </p>
-          </div>
-
-        </section>
 
         {/* LO PROBÉ YO PRIMERO CON GUIRNALDAS */}
         <section className="bg-white border-y-4 border-[#D4AF37] rounded-3xl shadow-xl max-w-3xl mx-auto relative overflow-hidden">
