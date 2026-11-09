@@ -71,8 +71,8 @@ export default function App() {
       img: "/assets/aistudio/VASOS-80_f555d110.jpg"
     },
     {
-      title: "Taza para el café de la oficina",
-      para: "los compañeros de trabajo, el jefe, el amigo invisible del laburo.",
+      title: "Tazas con stickers laqueados",
+      para: "el café de la oficina, el amigo invisible.",
       detail: "3 diseños para armar hasta 12 tazas.",
       tag: "DTF UV",
       img: "/assets/aistudio/TAZAS-80_4e860e58.jpg"
@@ -160,7 +160,7 @@ export default function App() {
         </div>
 
         <img 
-          src="/assets/aistudio/Artboard_12-80_6aa984cc.jpg" 
+          src="/assets/aistudio/Artboard_12-80_6b0d98f4.jpg" 
           alt="Regalos Resueltos - Promesa Principal" 
           className="w-full h-auto object-cover block m-0 p-0"
           referrerPolicy="no-referrer"
@@ -180,6 +180,25 @@ export default function App() {
           <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-2 shadow-[0_0_8px_white]"></span>
         </div>
       </header>
+
+      {/* IMAGEN DE LOS REGALOS SIN RECUADROS, DE LADO A LADO, BIEN GRANDE */}
+      <div className="w-full bg-white m-0 p-0 overflow-hidden border-b-4 border-[#D4AF37]">
+        <img 
+          src="/assets/aistudio/image_4885b410.png" 
+          alt="10 Ideas de Regalo Incluidas" 
+          className="w-full h-auto object-cover block m-0 p-0"
+          referrerPolicy="no-referrer"
+        />
+        {/* TEXTO DEBAJO DE LA IMAGEN */}
+        <div className="bg-[#B31942] text-white py-8 px-6 text-center space-y-3 border-t-4 border-[#D4AF37]">
+          <p className="text-lg md:text-2xl font-black tracking-tight leading-relaxed max-w-4xl mx-auto">
+            10 kits de diseños listos para mandar a imprimir y aplicar en tu casa : tazas, vasos, delantales, almohadones, velas, anotadores y más.
+          </p>
+          <p className="text-sm md:text-lg font-bold text-amber-200 tracking-wide max-w-3xl mx-auto">
+            Te alcanzan para armar más de 50 regalos únicos, aunque nunca hayas hecho una manualidad.
+          </p>
+        </div>
+      </div>
 
       <main className="max-w-5xl mx-auto px-6 py-12 space-y-24">
 
@@ -201,9 +220,6 @@ export default function App() {
 
         {/* HERO SUBHEADLINE & CTA */}
         <section className="text-center max-w-4xl mx-auto space-y-6 pt-2">
-          <p className="text-xl md:text-2xl font-medium text-[#6E6E73] max-w-3xl mx-auto leading-relaxed">
-            10 ideas de regalos con sus kits imprimibles para armar más de 50 regalos únicos desde tu casa, aunque nunca lo hayas hecho antes.
-          </p>
 
           <div className="pt-4 flex items-center justify-center">
             <div className="flex flex-col gap-4 w-full max-w-md">
@@ -257,80 +273,6 @@ export default function App() {
                 allowFullScreen
               ></iframe>
             )}
-          </div>
-        </section>
-
-        {/* GALERÍA DE LAS 10 IDEAS DE REGALO (EDGE TO EDGE, NO ROUNDED CORNERS) */}
-        <section className="space-y-12 bg-white/80 border border-[#E5E5EA] rounded-3xl p-8 md:p-14 shadow-sm">
-          <div className="text-center max-w-3xl mx-auto space-y-3">
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#D93829] text-white font-extrabold text-xs uppercase tracking-widest border border-[#D4AF37] shadow-sm">
-              <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" /> Catálogo Oficial Exclusivo
-            </span>
-            <h3 className="text-3xl md:text-4xl font-black tracking-tight text-[#1C1C1E]">
-              Las 10 Ideas de Regalo Incluidas en el Kit
-            </h3>
-            <p className="text-sm md:text-base text-[#6E6E73]">
-              Diseños profesionales listos para personalizar y deslumbrar a todos estas fiestas con acabado de tienda boutique.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {giftIdeas.map((gift, idx) => (
-              <div 
-                key={idx} 
-                className="bg-white border-2 border-[#D4AF37] rounded-2xl shadow-xl overflow-hidden flex flex-col p-6 space-y-4"
-              >
-                {/* Header text */}
-                <div className="space-y-1">
-                  <div className="text-[#B31942] font-black text-xs md:text-sm uppercase tracking-wider">
-                    REGALO {idx + 1}
-                  </div>
-                  <h4 className="text-xl md:text-2xl font-black text-[#1C1C1E] tracking-tight">
-                    {gift.title}
-                  </h4>
-                  <p className="text-sm md:text-base text-[#1C1C1E] font-medium leading-relaxed">
-                    <strong className="text-[#1B4D3E] font-bold">Para:</strong> {gift.para}
-                  </p>
-                </div>
-
-                {/* Image */}
-                <div className="w-full bg-[#FAF9F5] rounded-xl overflow-hidden border border-[#E5E5EA]">
-                  <img 
-                    src={gift.img} 
-                    alt={`Regalo #${idx + 1} - ${gift.title}`} 
-                    className="w-full h-auto object-cover block m-0 p-0"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
-
-                {/* Bottom detail box (Red Box Style) */}
-                <div className="bg-[#FF2D2D] border-2 border-[#D4AF37] rounded-2xl p-6 shadow-xl space-y-3 text-white">
-                  <div className="font-extrabold text-lg md:text-xl tracking-tight text-white flex items-center justify-between">
-                    <span>¿Qué incluye el kit?</span>
-                    <span className="shrink-0 bg-white/25 text-white text-xs font-black px-3.5 py-1.5 rounded-xl border border-white/40 uppercase tracking-wider">
-                      {gift.tag}
-                    </span>
-                  </div>
-                  <p className="text-sm md:text-base text-white font-medium leading-relaxed">
-                    {gift.detail}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Botón de compra adicional abajo de las tarjetas */}
-          <div className="pt-6 flex justify-center max-w-md mx-auto">
-            <a 
-              href="https://patatas-store.impultienda.ar/checkout" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
-            >
-              <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
-              <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">A UN PRECIO INCREIBLE DE LANZAMIENTO</div>
-              <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $9.900</div>
-            </a>
           </div>
         </section>
 
