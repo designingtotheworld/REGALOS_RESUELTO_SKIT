@@ -159,19 +159,12 @@ export default function App() {
           <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_8px_white]"></span>
         </div>
 
-        {!imageError ? (
-          <img 
-            src="https://i.imgur.com/dmuw46z.jpeg" 
-            alt="Regalos Resueltos - Promesa Principal" 
-            className="w-full h-auto object-cover pt-5 pb-5 block"
-            referrerPolicy="no-referrer"
-            onError={() => setImageError(true)}
-          />
-        ) : (
-          <div className="w-full h-64 bg-slate-100 flex items-center justify-center text-slate-500 font-medium">
-            Regalos Resueltos
-          </div>
-        )}
+        <img 
+          src="/assets/aistudio/Artboard_12-80_6aa984cc.jpg" 
+          alt="Regalos Resueltos - Promesa Principal" 
+          className="w-full h-auto object-cover block m-0 p-0"
+          referrerPolicy="no-referrer"
+        />
 
         {/* Garland lights bottom bar */}
         <div className="absolute bottom-0 inset-x-0 h-5 bg-[#1B4D3E] flex items-center justify-around px-4 z-10 border-t border-[#D4AF37]">
@@ -189,7 +182,7 @@ export default function App() {
       </header>
 
       <main className="max-w-5xl mx-auto px-6 py-12 space-y-24">
-        
+
         {/* NUEVO TEXTO INTRODUCTORIO (COMPACTO) */}
         <section className="bg-white border-2 border-[#D4AF37] rounded-3xl p-6 md:p-8 shadow-lg max-w-3xl mx-auto space-y-4 text-[#1C1C1E]">
           <h2 className="text-xl md:text-2xl font-black text-center text-[#996515]">
@@ -456,9 +449,9 @@ export default function App() {
                   ✓
                 </div>
                 <div className="flex-1 space-y-1">
-                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">10 kits de diseños listos para imprimir</h4>
+                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">10 kits de regalo por separado para armar solo los que más te gusten</h4>
                   <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
-                    Archivos PNG de alta resolución (300 DPI), preparados para DTF textil y DTF UV, para armar más de 50 regalos.
+                    (Entre todos rinde + 50 regalos) Archivos PNG de alta resolución (300 DPI), preparados para DTF textil y DTF UV.
                   </p>
                 </div>
               </div>
