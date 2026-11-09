@@ -337,7 +337,7 @@ export default function App() {
 
         {/* SINGLE CONSOLIDATED VALUE STACK CARD ("TODO LO QUE RECIBÍS HOY") */}
         <section className="max-w-3xl mx-auto">
-          <div className="bg-white border-4 border-[#D4AF37] rounded-3xl overflow-hidden shadow-2xl space-y-8">
+          <div className="bg-white border-4 border-[#D4AF37] rounded-3xl overflow-hidden shadow-2xl space-y-6">
             {/* Top Graphic Base Image (Edge-to-edge, no rounded corners) */}
             <div className="w-full m-0 p-0 bg-[#FAF9F5] relative">
               <img 
@@ -347,22 +347,22 @@ export default function App() {
                 referrerPolicy="no-referrer"
               />
               {/* Floating Much Bigger 71% OFF Badge */}
-              <div className="absolute top-4 right-4 md:top-6 md:right-6 z-20 bg-gradient-to-r from-[#B31942] via-[#990000] to-[#700D22] text-white border-4 border-[#D4AF37] px-6 py-4 rounded-3xl shadow-2xl flex items-center gap-3 animate-bounce">
-                <span className="text-3xl md:text-4xl">⭐</span>
+              <div className="absolute top-4 right-4 md:top-6 md:right-6 z-20 bg-gradient-to-r from-[#B31942] via-[#990000] to-[#700D22] text-white border-4 border-[#D4AF37] px-5 py-3 rounded-3xl shadow-2xl flex items-center gap-3 animate-bounce">
+                <span className="text-2xl md:text-3xl">⭐</span>
                 <div className="text-left leading-tight">
-                  <div className="text-[11px] md:text-xs uppercase font-extrabold tracking-widest text-amber-200">SOLO POR HOY</div>
-                  <div className="text-2xl md:text-4xl font-black text-amber-300">81% OFF</div>
+                  <div className="text-[10px] md:text-xs uppercase font-extrabold tracking-widest text-amber-200">SOLO POR HOY</div>
+                  <div className="text-xl md:text-3xl font-black text-amber-300">81% OFF</div>
                 </div>
               </div>
             </div>
 
-            <div className="p-6 md:p-10 space-y-8">
+            <div className="p-5 md:p-8 space-y-6">
               {/* Top Badge & Title */}
-              <div className="text-center space-y-3">
+              <div className="text-center space-y-2">
                 <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#996515] text-white font-extrabold text-xs uppercase tracking-widest shadow-sm">
                   <Package className="w-4 h-4 text-[#D4AF37]" /> Paquete Completo Todo Incluido
                 </span>
-                <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[#1C1C1E]">
+                <h3 className="text-xl md:text-2xl font-black tracking-tight text-[#1C1C1E]">
                   Todo lo que recibís hoy al adquirir el Kit
                 </h3>
                 <p className="text-xs md:text-sm text-[#6E6E73] max-w-lg mx-auto">
@@ -371,67 +371,67 @@ export default function App() {
               </div>
 
             {/* Checklist of Deliverables in One Card (Image 2 Style) */}
-            <div className="space-y-4 bg-[#FAF9F5] border border-[#D4AF37]/30 rounded-2xl p-6 md:p-8 shadow-inner text-left">
+            <div className="space-y-3 bg-[#FAF9F5] border border-[#D4AF37]/30 rounded-2xl p-4 md:p-6 shadow-inner text-left">
               {/* Item 1: Guía de Bienvenida */}
-              <div className="flex items-start gap-4 pb-4 border-b border-dashed border-[#D4AF37]/40">
-                <div className="w-8 h-8 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow">
+              <div className="flex items-start gap-3 pb-3 border-b border-dashed border-[#D4AF37]/40">
+                <div className="w-7 h-7 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow text-xs">
                   ✓
                 </div>
-                <div className="flex-1 space-y-1">
-                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">Guía de bienvenida y cómo usar el kit</h4>
-                  <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
-                    Explicación paso a paso para acceder a tus archivos, entender cada material y empezar a armar tus regalos sin dudas desde el primer minuto.
+                <div className="flex-1 space-y-0.5">
+                  <h4 className="font-extrabold text-xs md:text-sm text-[#1C1C1E]">Guía de bienvenida y cómo usar el kit</h4>
+                  <p className="text-xs text-[#6E6E73] leading-relaxed">
+                    Explicación paso a paso para acceder à tus archivos, entender cada material y empezar a armar tus regalos sin dudas desde el primer minuto.
                   </p>
                 </div>
               </div>
 
               {/* Item 2: Kits de diseños */}
-              <div className="flex items-start gap-4 pb-4 border-b border-dashed border-[#D4AF37]/40">
-                <div className="w-8 h-8 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow">
+              <div className="flex items-start gap-3 pb-3 border-b border-dashed border-[#D4AF37]/40">
+                <div className="w-7 h-7 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow text-xs">
                   ✓
                 </div>
-                <div className="flex-1 space-y-1">
-                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">10 kits de regalo por separado para armar solo los que más te gusten</h4>
-                  <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                <div className="flex-1 space-y-0.5">
+                  <h4 className="font-extrabold text-xs md:text-sm text-[#1C1C1E]">10 kits de regalo por separado para armar solo los que más te gusten</h4>
+                  <p className="text-xs text-[#6E6E73] leading-relaxed">
                     (Entre todos rinde + 50 regalos) Archivos PNG de alta resolución (300 DPI), preparados para DTF textil y DTF UV.
                   </p>
                 </div>
               </div>
 
               {/* Item 2 */}
-              <div className="flex items-start gap-4 pb-4 border-b border-dashed border-[#D4AF37]/40">
-                <div className="w-8 h-8 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow">
+              <div className="flex items-start gap-3 pb-3 border-b border-dashed border-[#D4AF37]/40">
+                <div className="w-7 h-7 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow text-xs">
                   ✓
                 </div>
-                <div className="flex-1 space-y-1">
-                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">Videos cortos paso a paso</h4>
-                  <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                <div className="flex-1 space-y-0.5">
+                  <h4 className="font-extrabold text-xs md:text-sm text-[#1C1C1E]">Videos cortos paso a paso</h4>
+                  <p className="text-xs text-[#6E6E73] leading-relaxed">
                     Cómo estampar con la plancha de tu casa y cómo aplicar los stickers en objetos rígidos.
                   </p>
                 </div>
               </div>
 
               {/* Item 3 */}
-              <div className="flex items-start gap-4 pb-4 border-b border-dashed border-[#D4AF37]/40">
-                <div className="w-8 h-8 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow">
+              <div className="flex items-start gap-3 pb-3 border-b border-dashed border-[#D4AF37]/40">
+                <div className="w-7 h-7 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shrink-0 font-bold shadow text-xs">
                   ✓
                 </div>
-                <div className="flex-1 space-y-1">
-                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">Guía de Canva</h4>
-                  <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                <div className="flex-1 space-y-0.5">
+                  <h4 className="font-extrabold text-xs md:text-sm text-[#1C1C1E]">Guía de Canva</h4>
+                  <p className="text-xs text-[#6E6E73] leading-relaxed">
                     [qué permite hacer: agregar nombres, personalizar frases…].
                   </p>
                 </div>
               </div>
 
               {/* Item 4 (Bono) */}
-              <div className="flex items-start gap-4 pt-1">
-                <div className="w-8 h-8 rounded-full bg-[#B31942] text-white flex items-center justify-center shrink-0 font-bold shadow">
+              <div className="flex items-start gap-3 pt-0.5">
+                <div className="w-7 h-7 rounded-full bg-[#B31942] text-white flex items-center justify-center shrink-0 font-bold shadow text-xs">
                   🎁
                 </div>
-                <div className="flex-1 space-y-1">
-                  <h4 className="font-extrabold text-sm md:text-base text-[#1C1C1E]">Bono: 12 tags navideños para imprimir</h4>
-                  <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                <div className="flex-1 space-y-0.5">
+                  <h4 className="font-extrabold text-xs md:text-sm text-[#1C1C1E]">Bono: 12 tags navideños para imprimir</h4>
+                  <p className="text-xs text-[#6E6E73] leading-relaxed">
                     Etiquetas "Para / De" a juego, para imprimir en cartulina A4 y que cada regalo quede presentado como de tienda.
                   </p>
                 </div>
@@ -439,94 +439,94 @@ export default function App() {
             </div>
 
             {/* Bonus Image Absolute Margin-to-Margin with Pinterest Warm White Fairy Lights Garland */}
-            <div className="w-full bg-white border-y-4 border-[#D4AF37] shadow-2xl overflow-hidden relative p-0 m-0">
+            <div className="w-full bg-white border-y-4 border-[#D4AF37] shadow-lg overflow-hidden relative p-0 m-0">
               {/* Garland lights top bar - Pinterest warm white style */}
-              <div className="absolute top-0 inset-x-0 h-5 bg-[#1B4D3E] flex items-center justify-around px-4 z-10 border-b border-[#D4AF37]">
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_8px_white]"></span>
+              <div className="absolute top-0 inset-x-0 h-4 bg-[#1B4D3E] flex items-center justify-around px-4 z-10 border-b border-[#D4AF37]">
+                <span className="w-2 h-2 rounded-full bg-white garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_6px_white]"></span>
               </div>
 
               <img 
                 src="https://i.imgur.com/ECPthhX.png" 
                 alt="Bono Exclusivo" 
-                className="w-full h-auto object-cover m-0 p-0 block pt-5 pb-5"
+                className="w-full h-auto object-cover m-0 p-0 block pt-4 pb-4"
                 referrerPolicy="no-referrer"
               />
 
               {/* Garland lights bottom bar - Pinterest warm white style */}
-              <div className="absolute bottom-0 inset-x-0 h-5 bg-[#1B4D3E] flex items-center justify-around px-4 z-10 border-t border-[#D4AF37]">
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-2 shadow-[0_0_8px_white]"></span>
+              <div className="absolute bottom-0 inset-x-0 h-4 bg-[#1B4D3E] flex items-center justify-around px-4 z-10 border-t border-[#D4AF37]">
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-2 shadow-[0_0_6px_white]"></span>
               </div>
             </div>
 
-            <div className="p-6 md:p-10 pt-2 space-y-6">
+            <div className="px-5 pt-1">
               <p className="text-xs text-[#6E6E73] text-center italic font-medium">
                 Kit de etiquetas y presentación incluido 100% gratis con tu compra hoy.
               </p>
             </div>
 
             {/* Price Box inside the Single Card */}
-            <div className="bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] rounded-3xl p-6 md:p-10 pt-12 pb-12 text-white shadow-2xl text-center space-y-6 border-2 border-white/60 relative overflow-hidden">
+            <div className="bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] rounded-3xl p-5 md:p-8 text-white shadow-xl text-center space-y-4 border-2 border-white/60 relative overflow-hidden">
               {/* Garland lights top bar */}
-              <div className="absolute top-0 inset-x-0 h-5 bg-[#1B4D3E] flex items-center justify-around px-4 z-10 border-b border-[#D4AF37]">
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_8px_white]"></span>
+              <div className="absolute top-0 inset-x-0 h-4 bg-[#1B4D3E] flex items-center justify-around px-4 z-10 border-b border-[#D4AF37]">
+                <span className="w-2 h-2 rounded-full bg-white garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_6px_white]"></span>
               </div>
 
-              <div className="space-y-2">
-                <span className="text-xs md:text-sm font-black uppercase tracking-widest bg-white/25 px-5 py-2 rounded-full inline-block shadow-sm">
+              <div className="space-y-1 pt-2">
+                <span className="text-[11px] md:text-xs font-black uppercase tracking-widest bg-white/25 px-4 py-1.5 rounded-full inline-block shadow-sm">
                   🔥 OFERTA DE LANZAMIENTO IRRESISTIBLE
                 </span>
-                <p className="text-sm font-medium opacity-95 pt-1">Valor Total Real del Paquete: <span className="line-through font-black text-lg text-white decoration-white">ARS $51.000</span> <span className="text-xs text-amber-100">(30 + 15 + 6)</span></p>
+                <p className="text-xs md:text-sm font-medium opacity-95 pt-1">Valor Total Real del Paquete: <span className="line-through font-black text-base text-white decoration-white">ARS $51.000</span> <span className="text-[11px] text-amber-100">(30 + 15 + 6)</span></p>
               </div>
 
               {/* Price displayed very big, clear and easy to read */}
-              <div className="bg-white/15 backdrop-blur-md rounded-3xl p-6 border-2 border-white/40 inline-block px-10 py-5 shadow-inner">
-                <p className="text-xs md:text-sm uppercase tracking-widest font-black opacity-95 text-amber-100">SOLO HOY PAGÁS</p>
-                <p className="text-5xl md:text-6xl font-black tracking-tight text-white drop-shadow-lg">ARS $9.900</p>
+              <div className="bg-white/15 backdrop-blur-md rounded-2xl p-4 border-2 border-white/40 inline-block px-8 py-3 shadow-inner">
+                <p className="text-[10px] md:text-xs uppercase tracking-widest font-black opacity-95 text-amber-100">SOLO HOY PAGÁS</p>
+                <p className="text-4xl md:text-5xl font-black tracking-tight text-white drop-shadow-lg">ARS $9.900</p>
               </div>
 
               {/* Single Large Golden Checkout Button: Argentina (Mercado Pago) */}
-              <div className="pt-2 flex justify-center">
+              <div className="pt-1 flex justify-center">
                 <a 
                   href="https://patatas-store.impultienda.ar/checkout" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full max-w-md px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
+                  className="w-full max-w-md px-5 py-4 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-0.5 border-2 border-white/90 text-center"
                 >
-                  <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
-                  <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
-                  <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $9.900</div>
+                  <div className="text-xs md:text-sm font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
+                  <div className="text-[10px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
+                  <div className="text-2xl md:text-3xl font-black text-white drop-shadow-lg mt-0.5">ARS $9.900</div>
                 </a>
               </div>
               
               {/* Trust & Reassurance Badges */}
-              <div className="pt-4 border-t border-white/30 flex flex-wrap items-center justify-center gap-4 text-xs font-bold text-amber-100">
+              <div className="pt-2 border-t border-white/30 flex flex-wrap items-center justify-center gap-3 text-[11px] font-bold text-amber-100">
                 <span>🔒 Pago 100% Seguro</span>
                 <span>•</span>
                 <span>⚡ Acceso Inmediato y Vitalicio</span>
@@ -535,32 +535,22 @@ export default function App() {
               </div>
 
               {/* Garland lights bottom bar */}
-              <div className="absolute bottom-0 inset-x-0 h-5 bg-[#1B4D3E] flex items-center justify-around px-4 z-10 border-t border-[#D4AF37]">
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-3 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_8px_white]"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-white garland-light-2 shadow-[0_0_8px_white]"></span>
+              <div className="absolute bottom-0 inset-x-0 h-4 bg-[#1B4D3E] flex items-center justify-around px-4 z-10 border-t border-[#D4AF37]">
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-3 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_6px_white]"></span>
+                <span className="w-2 h-2 rounded-full bg-white garland-light-2 shadow-[0_0_6px_white]"></span>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-        {/* NUEVA IMAGEN DE REGALOS AÑADIDA BAJO EL BLOQUE 6 */}
-        <div className="w-full overflow-hidden rounded-3xl shadow-2xl border-4 border-[#D4AF37] bg-white max-w-3xl mx-auto">
-          <img 
-            src="https://i.imgur.com/3HIR9Ji.jpeg" 
-            alt="Regalos Adicionales" 
-            className="w-full h-auto object-cover block m-0 p-0"
-            referrerPolicy="no-referrer"
-          />
-        </div>
 
         {/* VIDEO MP4 EN LUGAR DE GIF ANTES DE ESCASEZ */}
         <div className="w-full overflow-hidden rounded-2xl shadow-2xl border-2 border-[#D4AF37]">
