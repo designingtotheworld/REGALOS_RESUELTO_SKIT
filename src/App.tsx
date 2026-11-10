@@ -13,6 +13,14 @@ export default function App() {
   const [imageError, setImageError] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [isPlayingVideo, setIsPlayingVideo] = useState(false);
+  const [activeGiftIndex, setActiveGiftIndex] = useState(0);
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveGiftIndex((prev) => (prev + 1 >= giftIdeas.length ? 0 : prev + 1));
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
 
   // Dynamic today's date in Spanish for urgency banner
   const todayFormatted = new Date().toLocaleDateString('es-ES', { 
@@ -318,7 +326,7 @@ export default function App() {
               ¿Cuánto más gastás?
             </p>
             <p className="text-white/90">
-              Solo los objetos (los conseguís en cualquier bazar o mayorista) y la impresión, que ronda <span className="bg-[#D4AF37] text-[#1C1C1E] font-black px-2 py-0.5 rounded">entre ARS $11.000 y ARS $15.000 el metro</span>. En un solo metro podés mandar a imprimir varios kits de regalos. Por ejemplo, todos los de DTF TEXTIL.
+              Los objetos los podés encontrar a un precio super económico en MercadoLibre o en donde prefiras. Y la impresión, que ronda <span className="bg-[#D4AF37] text-[#1C1C1E] font-black px-2 py-0.5 rounded">entre ARS $11.000 y ARS $15.000 el metro</span>. En un solo metro podés mandar a imprimir varios kits de regalos. Por ejemplo, todos los de DTF TEXTIL.
             </p>
           </div>
 
@@ -335,67 +343,107 @@ export default function App() {
           </div>
         </section>
 
-        {/* GALERÍA DE LAS 10 IDEAS DE REGALO */}
-        <section className="space-y-12 bg-white/80 border border-[#E5E5EA] rounded-3xl p-8 md:p-14 shadow-sm">
-          <div className="text-center max-w-3xl mx-auto space-y-3">
+        {/* GALERÍA DE LAS 10 IDEAS DE REGALO (CARRUSEL DE 1 EN 1 CON AUTOPLAY) */}
+        <section className="space-y-6 bg-white/80 border border-[#E5E5EA] rounded-3xl p-6 md:p-12 shadow-sm relative max-w-xl mx-auto">
+          <div className="text-center space-y-2">
             <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#D93829] text-white font-extrabold text-xs uppercase tracking-widest border border-[#D4AF37] shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" /> Catálogo Oficial Exclusivo
             </span>
-            <h3 className="text-3xl md:text-4xl font-black tracking-tight text-[#1C1C1E]">
+            <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[#1C1C1E]">
               Las 10 Ideas de Regalo Incluidas en el Kit
             </h3>
-            <p className="text-sm md:text-base text-[#6E6E73]">
-              Diseños profesionales listos para personalizar y deslumbrar a todos estas fiestas con acabado de tienda boutique.
+            <p className="text-xs md:text-sm text-[#6E6E73]">
+              Diseños profesionales listos para personalizar y deslumbrar en estas fiestas.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {giftIdeas.map((gift, idx) => (
-              <div 
-                key={idx} 
-                className="bg-white border-2 border-[#D4AF37] rounded-2xl shadow-xl overflow-hidden flex flex-col p-6 space-y-4"
-              >
-                {/* Header text */}
-                <div className="space-y-1">
-                  <div className="text-[#B31942] font-black text-xs md:text-sm uppercase tracking-wider">
-                    REGALO {idx + 1}
-                  </div>
-                  <h4 className="text-xl md:text-2xl font-black text-[#1C1C1E] tracking-tight">
-                    {gift.title}
-                  </h4>
-                  <p className="text-sm md:text-base text-[#1C1C1E] font-medium leading-relaxed">
-                    <strong className="text-[#1B4D3E] font-bold">Para:</strong> {gift.para}
-                  </p>
-                </div>
+          {/* Carousel Container with Navigation Arrows */}
+          <div className="relative">
+            {/* Prev Button */}
+            <button 
+              onClick={() => setActiveGiftIndex(p => p === 0 ? giftIdeas.length - 1 : p - 1)}
+              className="absolute -left-3 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white border-2 border-[#D4AF37] text-[#996515] flex items-center justify-center font-bold shadow-xl hover:bg-[#D4AF37] hover:text-white transition-colors cursor-pointer"
+              aria-label="Anterior"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
 
-                {/* Image */}
-                <div className="w-full bg-[#FAF9F5] rounded-xl overflow-hidden border border-[#E5E5EA]">
-                  <img 
-                    src={gift.img} 
-                    alt={`Regalo #${idx + 1} - ${gift.title}`} 
-                    className="w-full h-auto object-cover block m-0 p-0"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
+            {/* Next Button with Arrow Indicator */}
+            <button 
+              onClick={() => setActiveGiftIndex(p => p + 1 >= giftIdeas.length ? 0 : p + 1)}
+              className="absolute -right-3 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white border-2 border-[#D4AF37] text-[#996515] flex items-center justify-center font-bold shadow-xl hover:bg-[#D4AF37] hover:text-white transition-colors cursor-pointer animate-pulse"
+              aria-label="Siguiente"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
 
-                {/* Bottom detail box (Brilliant Red Box Style) */}
-                <div className="bg-[#FF0000] border-2 border-[#D4AF37] rounded-2xl p-6 shadow-xl space-y-3 text-white">
-                  <div className="font-extrabold text-lg md:text-xl tracking-tight text-white flex items-center justify-between">
-                    <span>¿Qué incluye el kit?</span>
-                    <span className="shrink-0 bg-white/25 text-white text-xs font-black px-3.5 py-1.5 rounded-xl border border-white/40 uppercase tracking-wider">
-                      {gift.tag}
-                    </span>
+            {/* Single Gift Card Display */}
+            {(() => {
+              const gift = giftIdeas[activeGiftIndex];
+              const idx = activeGiftIndex;
+              return (
+                <div 
+                  className="bg-white border-2 border-[#D4AF37] rounded-2xl shadow-xl overflow-hidden flex flex-col p-6 space-y-4 transition-all duration-300"
+                >
+                  {/* Header text */}
+                  <div className="space-y-1">
+                    <div className="text-[#B31942] font-black text-xs md:text-sm uppercase tracking-wider">
+                      REGALO {idx + 1} DE 10
+                    </div>
+                    <h4 className="text-xl md:text-2xl font-black text-[#1C1C1E] tracking-tight">
+                      {gift.title}
+                    </h4>
+                    <p className="text-xs md:text-sm text-[#1C1C1E] font-medium leading-relaxed">
+                      <strong className="text-[#1B4D3E] font-bold">Para:</strong> {gift.para}
+                    </p>
                   </div>
-                  <p className="text-sm md:text-base text-white font-medium leading-relaxed">
-                    {gift.detail}
-                  </p>
+
+                  {/* Image */}
+                  <div className="w-full bg-[#FAF9F5] rounded-xl overflow-hidden border border-[#E5E5EA]">
+                    <img 
+                      src={gift.img} 
+                      alt={`Regalo #${idx + 1} - ${gift.title}`} 
+                      className="w-full h-auto object-cover block m-0 p-0 max-h-[320px]"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+
+                  {/* Bottom detail box (Brilliant Red Box Style) */}
+                  <div className="bg-[#FF0000] border-2 border-[#D4AF37] rounded-2xl p-5 shadow-xl space-y-2 text-white">
+                    <div className="font-extrabold text-base md:text-lg tracking-tight text-white flex items-center justify-between">
+                      <span>¿Qué incluye el kit?</span>
+                      <span className="shrink-0 bg-white/25 text-white text-[11px] font-black px-3 py-1 rounded-xl border border-white/40 uppercase tracking-wider">
+                        {gift.tag}
+                      </span>
+                    </div>
+                    <p className="text-xs md:text-sm text-white font-medium leading-relaxed">
+                      {gift.detail}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              );
+            })()}
+          </div>
+
+          {/* Swipe / Slide Hint */}
+          <div className="text-center text-xs font-bold text-[#996515] flex items-center justify-center gap-1.5 animate-pulse pt-1">
+            <span>👉 Hacé clic en la flecha hacia la derecha para ver todos los regalos</span>
+          </div>
+
+          {/* Dots Indicator for all 10 */}
+          <div className="flex justify-center items-center gap-1.5 pt-1 flex-wrap">
+            {giftIdeas.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setActiveGiftIndex(i)}
+                className={`h-2 rounded-full transition-all cursor-pointer ${activeGiftIndex === i ? 'w-6 bg-[#D4AF37]' : 'w-2 bg-gray-300'}`}
+                aria-label={`Ir al regalo ${i + 1}`}
+              />
             ))}
           </div>
 
           {/* Botón de compra adicional abajo de las tarjetas */}
-          <div className="pt-6 flex justify-center max-w-md mx-auto">
+          <div className="pt-4 flex justify-center max-w-md mx-auto">
             <a 
               href="https://patatas-store.impultienda.ar/checkout" 
               target="_blank"
