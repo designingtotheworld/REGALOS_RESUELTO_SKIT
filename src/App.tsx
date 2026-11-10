@@ -257,6 +257,84 @@ export default function App() {
           </div>
         </section>
 
+        {/* CÓMO FUNCIONA / NO NECESITÁS SABER DISEÑAR */}
+        <section className="bg-[#0F382B] border-2 border-[#D4AF37] rounded-3xl p-6 md:p-12 shadow-2xl space-y-8 text-white relative overflow-hidden">
+          <div className="text-center max-w-3xl mx-auto space-y-4">
+            <span className="text-xs font-black uppercase tracking-widest text-[#1C1C1E] bg-[#D4AF37] px-5 py-2 rounded-full shadow-md inline-block">
+              SIN MÁQUINAS NI EXPERIENCIA
+            </span>
+            <h3 className="text-2xl md:text-4xl font-black tracking-tight text-white leading-tight">
+              No necesitás saber diseñar ni tener una máquina de estampar
+            </h3>
+            <p className="text-sm md:text-base text-white/90 leading-relaxed max-w-2xl mx-auto">
+              El secreto se llama <strong className="text-[#D4AF37]">DTF</strong>: una lámina con tu diseño ya impreso que se aplica con plancha (cuando es para telas) o si es UV DTF (TIPO STICKER) se pega directo, sobre material rígido tipo taza, termo, vaso, etc.
+            </p>
+          </div>
+
+          <div className="space-y-4 max-w-3xl mx-auto">
+            {/* Step 1 */}
+            <div className="p-6 bg-white text-[#1C1C1E] rounded-2xl border-2 border-[#D4AF37]/50 shadow-xl flex items-start gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#D93829] text-white flex items-center justify-center font-black text-xl shadow-md shrink-0">
+                1
+              </div>
+              <div className="space-y-1">
+                <h4 className="font-extrabold text-base md:text-lg text-[#1C1C1E]">Elegís tus diseños</h4>
+                <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                  Descargás el kit del regalo que quieras hacer. Por ejemplo el KIT TOTE BAGS. Ese archivo viene armado con 3 impresiones para estampar 3 bolsas. (Si quisieras hacer más de 3, podés mandar a imprimir el archivo más de una vez).
+                </p>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="p-6 bg-white text-[#1C1C1E] rounded-2xl border-2 border-[#D4AF37]/50 shadow-xl flex items-start gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#D93829] text-white flex items-center justify-center font-black text-xl shadow-md shrink-0">
+                2
+              </div>
+              <div className="space-y-1">
+                <h4 className="font-extrabold text-base md:text-lg text-[#1C1C1E]">Los mandás a imprimir</h4>
+                <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                  Llevás o mandás los archivos a cualquier imprenta o taller que haga DTF textil o DTF UV. Ya vienen acomodados para aprovechar al máximo la lámina y que pagues lo menos posible.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="p-6 bg-white text-[#1C1C1E] rounded-2xl border-2 border-[#D4AF37]/50 shadow-xl flex items-start gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#D93829] text-white flex items-center justify-center font-black text-xl shadow-md shrink-0">
+                3
+              </div>
+              <div className="space-y-1">
+                <h4 className="font-extrabold text-base md:text-lg text-[#1C1C1E]">Los aplicás en tu casa</h4>
+                <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                  Bolsas, delantales y almohadones se estampan con la plancha de tu casa. Tazas, vasos, velas y anotadores llevan stickers que se pegan directo. Te mostramos cada paso en video.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Callout Box */}
+          <div className="max-w-3xl mx-auto bg-[#0B2920] border-2 border-[#D4AF37]/40 rounded-2xl p-6 shadow-inner text-white text-xs md:text-sm leading-relaxed space-y-2">
+            <p className="font-bold text-[#D4AF37]">
+              ¿Cuánto más gastás?
+            </p>
+            <p className="text-white/90">
+              Solo los objetos (los conseguís en cualquier bazar o mayorista) y la impresión, que ronda <span className="bg-[#D4AF37] text-[#1C1C1E] font-black px-2 py-0.5 rounded">entre ARS $11.000 y ARS $15.000 el metro</span>. En un solo metro podés mandar a imprimir varios kits de regalos. Por ejemplo, todos los de DTF TEXTIL.
+            </p>
+          </div>
+
+          <div className="pt-2 flex justify-center">
+            <a 
+              href="https://patatas-store.impultienda.ar/checkout" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-[#D4AF37] hover:bg-[#C2A130] text-[#1C1C1E] border-2 border-white font-black text-sm uppercase tracking-wider rounded-2xl shadow-xl transition-all inline-flex items-center gap-2"
+            >
+              <ShoppingCart className="w-5 h-5 text-[#1C1C1E]" />
+              <span>QUIERO MI KIT DIGITAL REGALOS RESUELTOS</span>
+            </a>
+          </div>
+        </section>
+
         {/* GALERÍA DE LAS 10 IDEAS DE REGALO */}
         <section className="space-y-12 bg-white/80 border border-[#E5E5EA] rounded-3xl p-8 md:p-14 shadow-sm">
           <div className="text-center max-w-3xl mx-auto space-y-3">
@@ -327,65 +405,6 @@ export default function App() {
               <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
               <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">A UN PRECIO INCREIBLE DE LANZAMIENTO</div>
               <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $9.900</div>
-            </a>
-          </div>
-        </section>
-
-        {/* CÓMO FUNCIONA / CÓMO SE USA (ESTILO NAVIDEÑO ROJO Y DORADO) */}
-        <section className="bg-gradient-to-br from-[#B31942] via-[#990000] to-[#700D22] border-2 border-[#D4AF37] rounded-3xl p-8 md:p-12 shadow-2xl space-y-10 text-white relative overflow-hidden">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="text-xs font-black uppercase tracking-widest text-[#D4AF37] px-4 py-1.5 bg-white/10 backdrop-blur rounded-full border border-[#D4AF37]/40">
-              Súper Simple y Flexible
-            </span>
-            <h3 className="text-2xl md:text-4xl font-black tracking-tight text-white drop-shadow-sm">
-              ¿Cómo funciona el sistema en 3 simples pasos?
-            </h3>
-            <p className="text-sm md:text-base text-white/90">
-              Sin complicaciones ni límites: armá todos los regalos que necesites desde la comodidad de tu hogar.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 bg-white text-[#1C1C1E] rounded-2xl border-2 border-[#D4AF37]/50 shadow-xl space-y-3 relative">
-              <div className="w-10 h-10 rounded-xl bg-[#D93829] text-white flex items-center justify-center font-black text-base shadow-md">
-                1
-              </div>
-              <h4 className="font-extrabold text-base md:text-lg text-[#1C1C1E]">Elegís y repetís sin límite</h4>
-              <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
-                Seleccionas solo los archivos de los regalos que querés hacer. <strong className="text-[#1C1C1E]">Podés mandar a imprimir un mismo archivo todas las veces que quieras</strong> para armar infinitos obsequios.
-              </p>
-            </div>
-
-            <div className="p-6 bg-white text-[#1C1C1E] rounded-2xl border-2 border-[#D4AF37]/50 shadow-xl space-y-3 relative">
-              <div className="w-10 h-10 rounded-xl bg-[#D93829] text-white flex items-center justify-center font-black text-base shadow-md">
-                2
-              </div>
-              <h4 className="font-extrabold text-base md:text-lg text-[#1C1C1E]">Mandás a imprimir</h4>
-              <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
-                Llevás los archivos a cualquier imprenta gráfica que realice DTF Textil o DTF UV. Te entregamos todo optimizado para ahorrar al máximo el material.
-              </p>
-            </div>
-
-            <div className="p-6 bg-white text-[#1C1C1E] rounded-2xl border-2 border-[#D4AF37]/50 shadow-xl space-y-3 relative">
-              <div className="w-10 h-10 rounded-xl bg-[#D93829] text-white flex items-center justify-center font-black text-base shadow-md">
-                3
-              </div>
-              <h4 className="font-extrabold text-base md:text-lg text-[#1C1C1E]">Aplicás en casa y listo</h4>
-              <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
-                Estampás con tu plancha hogareña o pegás sobre tus objetos rígidos con nuestras guías paso a paso. ¡Resultados de tienda boutique en minutos!
-              </p>
-            </div>
-          </div>
-
-          <div className="pt-2 flex justify-center">
-            <a 
-              href="https://patatas-store.impultienda.ar/checkout" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-[#1B4D3E] hover:bg-[#143B30] text-white border-2 border-[#D4AF37] font-black text-sm uppercase tracking-wider rounded-2xl shadow-xl transition-all inline-flex items-center gap-2"
-            >
-              <ShoppingCart className="w-5 h-5 text-[#D4AF37]" />
-              <span>QUIERO MI KIT DIGITAL REGALOS RESUELTOS</span>
             </a>
           </div>
         </section>
