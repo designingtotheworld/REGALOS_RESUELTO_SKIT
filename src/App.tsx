@@ -140,7 +140,7 @@ export default function App() {
       {/* TOP URGENCY BANNER WITH SWINGING BELLS */}
       <div className="bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] text-white py-3.5 px-4 text-center text-xs md:text-sm font-black tracking-wider uppercase flex items-center justify-center gap-3 shadow-lg sticky top-0 z-50">
         <span className="bell-ring text-lg">🔔</span>
-        <span>⚡ PRECIO ESPECIAL DE LANZAMIENTO ARS $12.900 ⚡</span>
+        <span>⚡ PRECIO ESPECIAL DE LANZAMIENTO ARS $12.900 (50% OFF) ⚡</span>
         <span className="bell-ring text-lg">🔔</span>
       </div>
 
@@ -356,19 +356,19 @@ export default function App() {
             {/* Prev Button */}
             <button 
               onClick={() => setActiveGiftIndex(p => p === 0 ? giftIdeas.length - 1 : p - 1)}
-              className="absolute -left-3 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white border-2 border-[#D4AF37] text-[#996515] flex items-center justify-center font-bold shadow-xl hover:bg-[#D4AF37] hover:text-white transition-colors cursor-pointer"
+              className="absolute -left-2 md:-left-5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white border-2 border-[#D4AF37] text-[#996515] flex items-center justify-center font-bold shadow-lg hover:bg-[#D4AF37] hover:text-white transition-colors cursor-pointer"
               aria-label="Anterior"
             >
-              <ChevronLeft className="w-6 h-6" />
+              <ChevronLeft className="w-5 h-5" />
             </button>
 
             {/* Next Button with Blinking Arrow Indicator */}
             <button 
               onClick={() => setActiveGiftIndex(p => p + 1 >= giftIdeas.length ? 0 : p + 1)}
-              className="absolute -right-3 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border-2 border-[#D4AF37] text-[#996515] flex items-center justify-center font-bold shadow-2xl hover:bg-[#D4AF37] hover:text-white transition-colors cursor-pointer animate-pulse scale-110"
+              className="absolute -right-2 md:-right-5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white border-2 border-[#D4AF37] text-[#996515] flex items-center justify-center font-bold shadow-lg hover:bg-[#D4AF37] hover:text-white transition-colors cursor-pointer animate-pulse"
               aria-label="Siguiente"
             >
-              <ChevronRight className="w-7 h-7" />
+              <ChevronRight className="w-5 h-5" />
             </button>
 
             {/* Single Gift Card Display */}
@@ -462,7 +462,6 @@ export default function App() {
                 className="w-full h-auto object-cover m-0 p-0 rounded-none block"
                 referrerPolicy="no-referrer"
               />
-              {/* Floating Badge Removed */}
             </div>
 
             <div className="p-5 md:p-8 space-y-6">
@@ -606,9 +605,9 @@ export default function App() {
 
                 <div className="space-y-1 pt-2">
                   <span className="text-[11px] md:text-xs font-black uppercase tracking-widest bg-white/25 px-4 py-1.5 rounded-full inline-block shadow-sm">
-                    🔥 OFERTA DE LANZAMIENTO IRRESISTIBLE
+                    🔥 OFERTA DE LANZAMIENTO (50% OFF)
                   </span>
-                  <p className="text-xs md:text-sm font-medium opacity-95 pt-1">Valor Total Real del Paquete: <span className="line-through font-black text-base text-white decoration-white">ARS $51.000</span> <span className="text-[11px] text-amber-100">(30 + 15 + 6)</span></p>
+                  <p className="text-xs md:text-sm font-medium opacity-95 pt-1">Valor Total Real del Paquete: <span className="line-through font-black text-base text-white decoration-white">ARS $25.800</span></p>
                 </div>
 
                 <div className="bg-white/15 backdrop-blur-md rounded-2xl p-4 border-2 border-white/40 inline-block px-8 py-3 shadow-inner">
@@ -750,16 +749,21 @@ export default function App() {
 
       </main>
 
-      {/* FLOATING WHATSAPP BUTTON FOR DOUBTS (+54 9 11 3608-9002) */}
-      <a 
-        href={whatsappUrl} 
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 border-2 border-white animate-bounce"
-        aria-label="Consultar dudas por WhatsApp"
-      >
-        <MessageCircle className="w-7 h-7 text-white" />
-      </a>
+      {/* FLOATING WHATSAPP BUTTON WITH DOUBTS TOOLTIP */}
+      <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+        <div className="bg-white text-[#1C1C1E] text-xs font-bold px-4 py-2.5 rounded-2xl shadow-2xl border-2 border-[#D4AF37] hidden sm:block animate-pulse max-w-[240px] text-right">
+          ¿Tenés dudas? Leé bien todo y si te queda alguna, escribinos 💬
+        </div>
+        <a 
+          href={whatsappUrl} 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 border-2 border-white animate-bounce shrink-0"
+          aria-label="Consultar dudas por WhatsApp"
+        >
+          <MessageCircle className="w-7 h-7 text-white" />
+        </a>
+      </div>
 
       {/* FOOTER */}
       <footer className="bg-[#1C1C1E] text-white/70 py-12 px-6 border-t border-white/10 mt-20 text-center space-y-4">
