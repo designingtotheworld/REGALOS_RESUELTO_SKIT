@@ -108,7 +108,8 @@ export default function App() {
     { q: "¿Sirve aunque nunca haya hecho manualidades antes?", a: "¡Totalmente! Está diseñado paso a paso para emprendedores y principiantes, con instrucciones visuales claras para que disfrutes el proceso." }
   ];
 
-  const whatsappUrl = "https://wa.me/5491136089002?text=Hola%2C%20quiero%20el%20kit%20Regalos%20Resueltos";
+  const checkoutUrl = "https://patatas-store.impultienda.ar/checkout";
+  const whatsappUrl = "https://wa.me/5491136089002?text=Hola%2C%20tengo%20una%20duda%20sobre%20el%20kit%20Regalos%20Resueltos";
 
   return (
     <div className="min-h-screen bg-[#FAF9F5] text-[#1C1C1E] font-sans antialiased selection:bg-[#E05A47]/20 selection:text-[#E05A47]">
@@ -139,7 +140,7 @@ export default function App() {
       {/* TOP URGENCY BANNER WITH SWINGING BELLS */}
       <div className="bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] text-white py-3.5 px-4 text-center text-xs md:text-sm font-black tracking-wider uppercase flex items-center justify-center gap-3 shadow-lg sticky top-0 z-50">
         <span className="bell-ring text-lg">🔔</span>
-        <span>⚡ PRECIO ESPECIAL DE LANZAMIENTO ARS $9.900 ⚡</span>
+        <span>⚡ PRECIO ESPECIAL DE LANZAMIENTO ARS $12.900 ⚡</span>
         <span className="bell-ring text-lg">🔔</span>
       </div>
 
@@ -207,13 +208,13 @@ export default function App() {
           <div className="pt-2 flex items-center justify-center">
             <div className="flex flex-col gap-4 w-full max-w-md">
               <a 
-                href={whatsappUrl} 
+                href={checkoutUrl} 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full max-w-md mx-auto px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
               >
                 <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
-                <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $9.900</div>
+                <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $12.900</div>
               </a>
             </div>
           </div>
@@ -325,7 +326,7 @@ export default function App() {
 
           <div className="pt-2 flex justify-center">
             <a 
-              href={whatsappUrl} 
+              href={checkoutUrl} 
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-[#D4AF37] hover:bg-[#C2A130] text-[#1C1C1E] border-2 border-white font-black text-sm uppercase tracking-wider rounded-2xl shadow-xl transition-all inline-flex items-center gap-2"
@@ -438,14 +439,14 @@ export default function App() {
           {/* Botón de compra adicional abajo de las tarjetas (BOTÓN 3) */}
           <div className="pt-4 flex justify-center max-w-md mx-auto">
             <a 
-              href={whatsappUrl} 
+              href={checkoutUrl} 
               target="_blank"
               rel="noopener noreferrer"
               className="w-full px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
             >
               <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
               <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">A UN PRECIO INCREIBLE DE LANZAMIENTO</div>
-              <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $9.900</div>
+              <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $12.900</div>
             </a>
           </div>
         </section>
@@ -461,14 +462,7 @@ export default function App() {
                 className="w-full h-auto object-cover m-0 p-0 rounded-none block"
                 referrerPolicy="no-referrer"
               />
-              {/* Floating Much Bigger 71% OFF Badge */}
-              <div className="absolute top-4 right-4 md:top-6 md:right-6 z-20 bg-gradient-to-r from-[#B31942] via-[#990000] to-[#700D22] text-white border-4 border-[#D4AF37] px-5 py-3 rounded-3xl shadow-2xl flex items-center gap-3 animate-bounce">
-                <span className="text-2xl md:text-3xl">⭐</span>
-                <div className="text-left leading-tight">
-                  <div className="text-[10px] md:text-xs uppercase font-extrabold tracking-widest text-amber-200">SOLO POR HOY</div>
-                  <div className="text-xl md:text-3xl font-black text-amber-300">81% OFF</div>
-                </div>
-              </div>
+              {/* Floating Badge Removed */}
             </div>
 
             <div className="p-5 md:p-8 space-y-6">
@@ -619,24 +613,24 @@ export default function App() {
 
                 <div className="bg-white/15 backdrop-blur-md rounded-2xl p-4 border-2 border-white/40 inline-block px-8 py-3 shadow-inner">
                   <p className="text-[10px] md:text-xs uppercase tracking-widest font-black opacity-95 text-amber-100">SOLO HOY PAGÁS</p>
-                  <p className="text-4xl md:text-5xl font-black tracking-tight text-white drop-shadow-lg">ARS $9.900</p>
+                  <p className="text-4xl md:text-5xl font-black tracking-tight text-white drop-shadow-lg">ARS $12.900</p>
                 </div>
 
                 <div className="pt-1 flex justify-center">
                   <a 
-                    href={whatsappUrl} 
+                    href={checkoutUrl} 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full max-w-md px-5 py-4 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-0.5 border-2 border-white/90 text-center"
                   >
                     <div className="text-xs md:text-sm font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
-                    <div className="text-[10px] font-bold text-amber-100 uppercase tracking-widest">💬 Comprar por WhatsApp</div>
-                    <div className="text-2xl md:text-3xl font-black text-white drop-shadow-lg mt-0.5">ARS $9.900</div>
+                    <div className="text-[10px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
+                    <div className="text-2xl md:text-3xl font-black text-white drop-shadow-lg mt-0.5">ARS $12.900</div>
                   </a>
                 </div>
                 
                 <div className="pt-2 border-t border-white/30 flex flex-wrap items-center justify-center gap-3 text-[11px] font-bold text-amber-100">
-                  <span>🔒 Pago Seguro por WhatsApp</span>
+                  <span>🔒 Pago 100% Seguro</span>
                   <span>•</span>
                   <span>⚡ Acceso Inmediato y Vitalicio</span>
                   <span>•</span>
@@ -758,7 +752,7 @@ export default function App() {
 
       {/* FLOATING WHATSAPP BUTTON FOR DOUBTS (+54 9 11 3608-9002) */}
       <a 
-        href="https://wa.me/5491136089002?text=Hola%2C%20tengo%20una%20duda%20sobre%20el%20kit%20Regalos%20Resueltos" 
+        href={whatsappUrl} 
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 border-2 border-white animate-bounce"
