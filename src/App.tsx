@@ -396,7 +396,7 @@ export default function App() {
                     <img 
                       src={gift.img} 
                       alt={`Regalo #${idx + 1} - ${gift.title}`} 
-                      className="w-full h-auto object-cover block m-0 p-0 max-h-[320px]"
+                      className="w-full h-auto object-contain block m-0 p-0"
                       referrerPolicy="no-referrer"
                     />
                   </div>
