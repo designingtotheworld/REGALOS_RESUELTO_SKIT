@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { 
   Gift, Sparkles, Check, ChevronRight, ChevronLeft, ShieldCheck, 
-  Clock, AlertCircle, HelpCircle, Package, Play, ShoppingCart, Star, Plus, Flame, Award, Video, FileText
+  Clock, AlertCircle, HelpCircle, Package, Play, ShoppingCart, Star, Plus, Flame, Award, Video, FileText, MessageCircle
 } from 'lucide-react';
 
 export default function App() {
@@ -108,6 +108,8 @@ export default function App() {
     { q: "¿Sirve aunque nunca haya hecho manualidades antes?", a: "¡Totalmente! Está diseñado paso a paso para emprendedores y principiantes, con instrucciones visuales claras para que disfrutes el proceso." }
   ];
 
+  const whatsappUrl = "https://wa.me/5491136089002?text=Hola%2C%20quiero%20el%20kit%20Regalos%20Resueltos";
+
   return (
     <div className="min-h-screen bg-[#FAF9F5] text-[#1C1C1E] font-sans antialiased selection:bg-[#E05A47]/20 selection:text-[#E05A47]">
       {/* CSS KEYFRAMES FOR BELL SWINGING & GARLAND BLINKING */}
@@ -200,12 +202,12 @@ export default function App() {
           </p>
         </section>
 
-        {/* HERO CTA */}
+        {/* HERO CTA (BOTÓN 1) */}
         <section className="text-center max-w-4xl mx-auto space-y-6 pt-2">
           <div className="pt-2 flex items-center justify-center">
             <div className="flex flex-col gap-4 w-full max-w-md">
               <a 
-                href="https://patatas-store.impultienda.ar/checkout" 
+                href={whatsappUrl} 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full max-w-md mx-auto px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
@@ -256,7 +258,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* CÓMO FUNCIONA / BLOQUE VERDE (UBICADO EXACTAMENTE ABAJO DEL VIDEO) */}
+        {/* CÓMO FUNCIONA / BLOQUE VERDE (BOTÓN 2) */}
         <section className="bg-[#0F382B] border-2 border-[#D4AF37] rounded-3xl p-6 md:p-12 shadow-2xl space-y-8 text-white relative overflow-hidden">
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <span className="text-xs font-black uppercase tracking-widest text-[#1C1C1E] bg-[#D4AF37] px-5 py-2 rounded-full shadow-md inline-block">
@@ -323,7 +325,7 @@ export default function App() {
 
           <div className="pt-2 flex justify-center">
             <a 
-              href="https://patatas-store.impultienda.ar/checkout" 
+              href={whatsappUrl} 
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-[#D4AF37] hover:bg-[#C2A130] text-[#1C1C1E] border-2 border-white font-black text-sm uppercase tracking-wider rounded-2xl shadow-xl transition-all inline-flex items-center gap-2"
@@ -334,7 +336,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* GALERÍA DE LAS 10 IDEAS DE REGALO (CARRUSEL DE 1 EN 1 CON AUTOPLAY Y FLECHA TITILANTE) */}
+        {/* GALERÍA DE LAS 10 IDEAS DE REGALO (CARRUSEL DE 1 EN 1) */}
         <section className="space-y-6 bg-white/80 border border-[#E5E5EA] rounded-3xl p-6 md:p-12 shadow-sm relative max-w-xl mx-auto">
           <div className="text-center space-y-2">
             <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#D93829] text-white font-extrabold text-xs uppercase tracking-widest border border-[#D4AF37] shadow-sm">
@@ -433,10 +435,10 @@ export default function App() {
             ))}
           </div>
 
-          {/* Botón de compra adicional abajo de las tarjetas */}
+          {/* Botón de compra adicional abajo de las tarjetas (BOTÓN 3) */}
           <div className="pt-4 flex justify-center max-w-md mx-auto">
             <a 
-              href="https://patatas-store.impultienda.ar/checkout" 
+              href={whatsappUrl} 
               target="_blank"
               rel="noopener noreferrer"
               className="w-full px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
@@ -593,7 +595,7 @@ export default function App() {
                 </p>
               </div>
 
-              {/* Price Box inside the Single Card */}
+              {/* Price Box inside the Single Card (BOTÓN 4) */}
               <div className="bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] rounded-3xl p-5 md:p-8 text-white shadow-xl text-center space-y-4 border-2 border-white/60 relative overflow-hidden">
                 <div className="absolute top-0 inset-x-0 h-4 bg-[#1B4D3E] flex items-center justify-around px-4 z-10 border-b border-[#D4AF37]">
                   <span className="w-2 h-2 rounded-full bg-white garland-light-1 shadow-[0_0_6px_white]"></span>
@@ -622,19 +624,19 @@ export default function App() {
 
                 <div className="pt-1 flex justify-center">
                   <a 
-                    href="https://patatas-store.impultienda.ar/checkout" 
+                    href={whatsappUrl} 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full max-w-md px-5 py-4 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-0.5 border-2 border-white/90 text-center"
                   >
                     <div className="text-xs md:text-sm font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
-                    <div className="text-[10px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
+                    <div className="text-[10px] font-bold text-amber-100 uppercase tracking-widest">💬 Comprar por WhatsApp</div>
                     <div className="text-2xl md:text-3xl font-black text-white drop-shadow-lg mt-0.5">ARS $9.900</div>
                   </a>
                 </div>
                 
                 <div className="pt-2 border-t border-white/30 flex flex-wrap items-center justify-center gap-3 text-[11px] font-bold text-amber-100">
-                  <span>🔒 Pago 100% Seguro</span>
+                  <span>🔒 Pago Seguro por WhatsApp</span>
                   <span>•</span>
                   <span>⚡ Acceso Inmediato y Vitalicio</span>
                   <span>•</span>
@@ -753,6 +755,17 @@ export default function App() {
         </section>
 
       </main>
+
+      {/* FLOATING WHATSAPP BUTTON FOR DOUBTS (+54 9 11 3608-9002) */}
+      <a 
+        href="https://wa.me/5491136089002?text=Hola%2C%20tengo%20una%20duda%20sobre%20el%20kit%20Regalos%20Resueltos" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 border-2 border-white animate-bounce"
+        aria-label="Consultar dudas por WhatsApp"
+      >
+        <MessageCircle className="w-7 h-7 text-white" />
+      </a>
 
       {/* FOOTER */}
       <footer className="bg-[#1C1C1E] text-white/70 py-12 px-6 border-t border-white/10 mt-20 text-center space-y-4">
