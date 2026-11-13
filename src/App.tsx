@@ -168,7 +168,7 @@ export default function App() {
         <div className="w-full bg-white relative">
           <img 
             src="/assets/aistudio/image_7a09c028.png" 
-            alt="Kit Digital Regalos Resueltos - Promesa Principal" 
+            alt="Kit Emprendedores y Feriantes - Promesa Principal" 
             className="w-full h-auto object-cover block m-0 p-0"
             referrerPolicy="no-referrer"
           />
@@ -471,6 +471,55 @@ export default function App() {
           </div>
         </section>
 
+        {/* ORDER BUMP / UPSELL DE 24 IMÁGENES */}
+        <section className="max-w-3xl mx-auto">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-4 border-[#D4AF37] rounded-3xl p-6 md:p-8 shadow-xl space-y-6 relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-[#B31942] text-white text-[10px] font-black uppercase px-4 py-1.5 rounded-bl-xl tracking-wider shadow">
+              🔥 UPGRADE RECOMENDADO
+            </div>
+
+            <div className="text-center space-y-1 pt-2">
+              <span className="text-[11px] font-black text-[#996515] uppercase tracking-widest bg-amber-100 px-3.5 py-1 rounded-full">
+                OFERTA EXCLUSIVA DE CHECKOUT
+              </span>
+              <h3 className="text-xl md:text-2xl font-black text-[#1C1C1E]">
+                Sumá a tu compra por sólo $5.000 más
+              </h3>
+            </div>
+
+            {/* Attached Image Showcase */}
+            <div className="w-full bg-white rounded-2xl overflow-hidden border-2 border-[#D4AF37] shadow-md">
+              <img 
+                src="/assets/aistudio/image_85de2a3a.png" 
+                alt="Kit Extra 24 Imágenes en Tendencia + Guía Canva" 
+                className="w-full h-auto object-cover block m-0 p-0"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+
+            <div className="space-y-3 text-center md:text-left">
+              <h4 className="font-extrabold text-base md:text-lg text-[#1C1C1E]">
+                Kit de 24 Imágenes Sueltas en Tendencia + Guía Canva
+              </h4>
+              <p className="text-xs md:text-sm text-[#6E6E73] leading-relaxed">
+                Llevalo hoy por sólo $5.000 adicionales y expandí tu catálogo al instante. Diseños variados y súper comerciales listos para usar en tus estampas de remeras, bolsas, tazas, alpargatas, anotadores o el producto que quieras sumar a tu puesto.
+              </p>
+            </div>
+
+            <div className="pt-2 flex justify-center">
+              <a 
+                href={checkoutUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleCheckoutClick}
+                className="w-full max-w-md px-6 py-4 bg-gradient-to-r from-[#1B4D3E] to-[#143B30] hover:opacity-95 text-white font-black text-xs md:text-sm uppercase tracking-wider rounded-2xl shadow-xl transition-all flex items-center justify-center gap-2 border-2 border-white text-center"
+              >
+                <span>¡Sí, sumar el Kit Extra por sólo ARS $5.000 más!</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* SINGLE CONSOLIDATED VALUE STACK CARD */}
         <section className="max-w-3xl mx-auto">
           <div className="bg-white border-4 border-[#D4AF37] rounded-3xl overflow-hidden shadow-2xl space-y-6">
@@ -660,17 +709,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* VIDEO MP4 */}
-        <div className="w-full overflow-hidden rounded-2xl shadow-2xl border-2 border-[#D4AF37]">
-          <video 
-            src="https://i.imgur.com/mScaTdr.mp4" 
-            autoPlay 
-            loop 
-            muted 
-            playsInline 
-            className="w-full h-auto object-cover block m-0 p-0"
-          ></video>
-        </div>
+
 
         {/* URGENCIA TEMPORADA */}
         <section className="bg-red-50 border border-red-200 rounded-3xl p-8 text-center space-y-4">
@@ -740,9 +779,9 @@ export default function App() {
       </footer>
 
       {/* FLOATING WHATSAPP SUPPORT BUTTON WITH HELPER TOOLTIP */}
-      <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">
-        <div className="bg-white text-[#1C1C1E] px-4 py-2.5 rounded-2xl shadow-2xl border-2 border-[#25D366] text-xs font-bold animate-bounce hidden sm:flex items-center gap-2">
-          <span>👋 ¿Tenés dudas sobre el kit para feriantes? ¡Escribinos!</span>
+      <div className="fixed bottom-6 right-6 z-50 flex items-center gap-2">
+        <div className="bg-white text-[#1C1C1E] px-3 py-1.5 rounded-xl shadow-lg border border-[#25D366] text-[11px] font-bold hidden sm:flex items-center gap-1.5">
+          <span>💬 ¿Dudas? ¡Escribinos!</span>
         </div>
 
         <a 
