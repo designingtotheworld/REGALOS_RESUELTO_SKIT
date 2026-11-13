@@ -109,7 +109,17 @@ export default function App() {
   ];
 
   const checkoutUrl = "https://patatas-store.impultienda.ar/checkout";
-  const whatsappUrl = "https://wa.me/5491136089002?text=Hola%2C%20tengo%20una%20duda%20sobre%20el%20kit%20Regalos%20Resueltos";
+  const whatsappUrl = "https://wa.me/5491122868735?text=Hola%2C%20tengo%20una%20duda%20sobre%20el%20kit%20Regalos%20Resueltos";
+
+  const handleCheckoutClick = () => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      try {
+        (window as any).fbq('track', 'InitiateCheckout');
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#FAF9F5] text-[#1C1C1E] font-sans antialiased selection:bg-[#E05A47]/20 selection:text-[#E05A47]">
@@ -211,6 +221,7 @@ export default function App() {
                 href={checkoutUrl} 
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleCheckoutClick}
                 className="w-full max-w-md mx-auto px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
               >
                 <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
@@ -329,6 +340,7 @@ export default function App() {
               href={checkoutUrl} 
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleCheckoutClick}
               className="px-8 py-4 bg-[#D4AF37] hover:bg-[#C2A130] text-[#1C1C1E] border-2 border-white font-black text-sm uppercase tracking-wider rounded-2xl shadow-xl transition-all inline-flex items-center gap-2"
             >
               <ShoppingCart className="w-5 h-5 text-[#1C1C1E]" />
@@ -442,6 +454,7 @@ export default function App() {
               href={checkoutUrl} 
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleCheckoutClick}
               className="w-full px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white/90 text-center"
             >
               <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
@@ -620,6 +633,7 @@ export default function App() {
                     href={checkoutUrl} 
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={handleCheckoutClick}
                     className="w-full max-w-md px-5 py-4 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-0.5 border-2 border-white/90 text-center"
                   >
                     <div className="text-xs md:text-sm font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO MI KIT!</div>
