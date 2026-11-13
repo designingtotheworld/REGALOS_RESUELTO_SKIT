@@ -361,6 +361,31 @@ export default function App() {
           </div>
         </section>
 
+        {/* MOCKUPS OVERVIEW GRID IMAGE */}
+        <section className="max-w-3xl mx-auto">
+          <div className="bg-white border-4 border-[#D4AF37] rounded-3xl overflow-hidden shadow-2xl p-4 md:p-6 space-y-4">
+            <div className="text-center space-y-1">
+              <span className="text-[11px] font-black text-[#996515] uppercase tracking-widest bg-amber-100 px-3.5 py-1 rounded-full">
+                CATÁLOGO DE LAS 10 IDEAS DE REGALO
+              </span>
+              <h3 className="text-xl md:text-2xl font-black text-[#1C1C1E]">
+                Las 10 Ideas de Regalo (¡Cada una con múltiples versiones y diseños listos!)
+              </h3>
+              <p className="text-xs md:text-sm text-[#6E6E73]">
+                Vistazo general de todos los productos incluidos, con diferentes opciones gráficas en tendencia para producir y vender.
+              </p>
+            </div>
+            <div className="w-full bg-[#FAF9F5] rounded-2xl overflow-hidden border border-[#D4AF37] shadow-inner">
+              <img 
+                src="https://i.imgur.com/3HIR9Ji.jpeg" 
+                alt="Mockups de los 10 Regalos del Kit" 
+                className="w-full h-auto object-cover block m-0 p-0"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* GALERÍA DE LOS 10 KITS DE PRODUCTOS (CARRUSEL DE 1 EN 1) */}
         <section className="space-y-6 bg-white/80 border border-[#E5E5EA] rounded-3xl p-6 md:p-12 shadow-sm relative max-w-xl mx-auto">
           <div className="text-center space-y-2">
