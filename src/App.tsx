@@ -165,12 +165,27 @@ export default function App() {
           <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-1 shadow-[0_0_8px_white]"></span>
         </div>
 
-        <img 
-          src="/assets/aistudio/esta_58d0175c.png" 
-          alt="Kit Emprendedores y Feriantes - Promesa Principal" 
-          className="w-full h-auto object-cover block m-0 p-0"
-          referrerPolicy="no-referrer"
-        />
+        <div className="w-full bg-white relative">
+          <img 
+            src="/assets/aistudio/image_7a09c028.png" 
+            alt="Kit Digital Regalos Resueltos - Promesa Principal" 
+            className="w-full h-auto object-cover block m-0 p-0"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+
+        {/* Super converting promise banner */}
+        <div className="bg-gradient-to-r from-[#1B4D3E] via-[#0F382B] to-[#143B30] py-6 px-6 text-center text-white border-t-2 border-[#D4AF37] space-y-2 relative z-20 shadow-xl">
+          <span className="text-[11px] md:text-xs font-black uppercase tracking-widest bg-[#D4AF37] text-[#1C1C1E] px-4 py-1.5 rounded-full shadow-md inline-block">
+            🌟 KIT EMPRENDEDORES & FERIANTES
+          </span>
+          <h1 className="text-xl md:text-3xl font-black text-white tracking-tight uppercase drop-shadow-lg">
+            ¡Triplicá tus ventas con el kit para armar más de 50 productos rentables y con diseños en tendencia!
+          </h1>
+          <p className="text-xs md:text-sm text-white/90 max-w-xl mx-auto font-medium leading-relaxed">
+            Diseños profesionales listos para ferias navideñas y turísticas con 300% de margen y sin máquinas caras.
+          </p>
+        </div>
 
         <div className="absolute bottom-0 inset-x-0 h-5 bg-[#1B4D3E] flex items-center justify-around px-4 z-10 border-t border-[#D4AF37]">
           <span className="w-2.5 h-2.5 rounded-full bg-amber-100 garland-light-2 shadow-[0_0_8px_white]"></span>
