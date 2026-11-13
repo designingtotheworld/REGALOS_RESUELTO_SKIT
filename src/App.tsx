@@ -143,7 +143,7 @@ export default function App() {
       {/* TOP URGENCY BANNER */}
       <div className="bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] text-white py-3.5 px-4 text-center text-xs md:text-sm font-black tracking-wider uppercase flex items-center justify-center gap-3 shadow-lg sticky top-0 z-50">
         <span className="bell-ring text-lg">🔔</span>
-        <span>⚡ KIT EMPRENDEDORES & FERIANTES: OFERTA LANZAMIENTO ARS $12.900 (50% OFF) ⚡</span>
+        <span>⚡ KIT EMPRENDEDORES & FERIANTES: OFERTA LANZAMIENTO ARS $15.000 (50% OFF) ⚡</span>
         <span className="bell-ring text-lg">🔔</span>
       </div>
 
@@ -238,7 +238,7 @@ export default function App() {
                 className="w-full max-w-md mx-auto px-6 py-5 bg-gradient-to-r from-[#996515] via-[#D4AF37] to-[#B8860B] hover:opacity-95 text-white rounded-2xl shadow-2xl transition-all flex flex-col items-center justify-center gap-1 border-2 border-white text-center"
               >
                 <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO EL KIT PARA MI EMPRENDIMIENTO!</div>
-                <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $12.900</div>
+                <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $15.000</div>
               </a>
             </div>
           </div>
@@ -466,7 +466,7 @@ export default function App() {
             >
               <div className="text-sm md:text-base font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO EL KIT EMPRENDEDORES!</div>
               <div className="text-[11px] font-bold text-amber-100 uppercase tracking-widest">OFERTA ESPECIAL TEMPORADA</div>
-              <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $12.900</div>
+              <div className="text-3xl md:text-4xl font-black text-white drop-shadow-lg mt-1">ARS $15.000</div>
             </a>
           </div>
         </section>
@@ -613,12 +613,12 @@ export default function App() {
                   <span className="text-[11px] md:text-xs font-black uppercase tracking-widest bg-white/30 px-4 py-1.5 rounded-full inline-block shadow-sm">
                     🔥 OFERTA EMPRENDEDORES (50% OFF)
                   </span>
-                  <p className="text-xs md:text-sm font-medium opacity-95 pt-1">Valor Total Real del Paquete: <span className="line-through font-black text-base text-white decoration-white">ARS $25.800</span></p>
+                  <p className="text-xs md:text-sm font-medium opacity-95 pt-1">Valor Total Real del Paquete: <span className="line-through font-black text-base text-white decoration-white">ARS $30.000</span></p>
                 </div>
 
                 <div className="bg-white/20 backdrop-blur-md rounded-2xl p-4 border-2 border-white inline-block px-8 py-3 shadow-inner">
                   <p className="text-[10px] md:text-xs uppercase tracking-widest font-black opacity-95 text-amber-100">SOLO HOY INVERTÍS</p>
-                  <p className="text-4xl md:text-5xl font-black tracking-tight text-white drop-shadow-lg">ARS $12.900</p>
+                  <p className="text-4xl md:text-5xl font-black tracking-tight text-white drop-shadow-lg">ARS $15.000</p>
                 </div>
 
                 <div className="pt-1 flex justify-center">
@@ -631,7 +631,7 @@ export default function App() {
                   >
                     <div className="text-xs md:text-sm font-black text-white uppercase tracking-wider drop-shadow">¡QUIERO EL KIT PARA MI NEGOCIO!</div>
                     <div className="text-[10px] font-bold text-amber-100 uppercase tracking-widest">🇦🇷 Pagar con Mercado Pago</div>
-                    <div className="text-2xl md:text-3xl font-black text-white drop-shadow-lg mt-0.5">ARS $12.900</div>
+                    <div className="text-2xl md:text-3xl font-black text-white drop-shadow-lg mt-0.5">ARS $15.000</div>
                   </a>
                 </div>
                 
